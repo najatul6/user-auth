@@ -11,10 +11,12 @@ import Features from "./pages/Features";
 import Blog from "./pages/Blog";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
+import Error10 from "./pages/Error10 ";
 const router = createBrowserRouter([
   {
     path: "/",
     element: <Layout />,
+    errorElement:<Error10/>,
     children: [
       { path: "/", element: <Home/> },
       { path: "/team", element: <Team/> },
@@ -22,10 +24,10 @@ const router = createBrowserRouter([
       { path: "/blog", element: <Blog/> },
       { path: "/about", element: <About/> },
       { path: "/contact", element: <Contact/> },
-      { path: "/login", element:  <Login/> },
-      { path: "/register", element:  <Register/> },
     ],
   },
+  { path: "/login", element:  <Login/> },
+  { path: "/register", element:  <Register/> },
 ]);
 
 createRoot(document.getElementById("root")).render(

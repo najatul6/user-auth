@@ -6,7 +6,7 @@ const Register = () => {
       <div className="bg-white grid md:grid-cols-2 gap-16 w-full sm:p-8 p-6 shadow-md rounded-md overflow-hidden">
         <div className="max-md:order-1 space-y-6">
           <div className="md:mb-16 mb-8">
-            <h3 className="text-gray-800 text-2xl font-bold">Instant Access</h3>
+            <h3 className="text-[#FFA726] text-2xl font-bold">Instant Access</h3>
           </div>
 
           <div className="space-y-6">
@@ -20,7 +20,7 @@ const Register = () => {
               Continue with Facebook
             </button>
             <button type="button"
-              className="w-full px-5 py-2.5 flex items-center justify-center rounded-md text-gray-800 text-base tracking-wider font-semibold border-none outline-none bg-gray-100 hover:bg-gray-200">
+              className="w-full px-5 py-2.5 flex items-center justify-center rounded-md text-[#FFA726] text-base tracking-wider font-semibold border-none outline-none bg-gray-100 hover:bg-gray-200">
               <svg xmlns="http://www.w3.org/2000/svg" width="22px" fill="#fff" className="inline shrink-0 mr-4" viewBox="0 0 512 512">
                 <path fill="#fbbd00"
                   d="M120 256c0-25.367 6.989-49.13 19.131-69.477v-86.308H52.823C18.568 144.703 0 198.922 0 256s18.568 111.297 52.823 155.785h86.308v-86.308C126.989 305.13 120 281.367 120 256z"
@@ -57,14 +57,14 @@ const Register = () => {
 
         <form className="w-full">
           <div className="mb-8">
-            <h3 className="text-gray-800 text-2xl font-bold">Register</h3>
+            <h3 className="text-[#FFA726] text-2xl font-bold">Register</h3>
           </div>
 
           <div className="space-y-6">
             <div>
-              <label className="text-gray-800 text-sm mb-2 block">Name</label>
+              <label className="text-[#FFA726] text-sm mb-2 block">Name</label>
               <div className="relative flex items-center">
-                <input name="name" type="text" required className="bg-white border border-gray-300 w-full text-sm text-gray-800 pl-4 pr-10 py-2.5 rounded-md outline-blue-500" placeholder="Enter name" />
+                <input name="name" type="text" required className="bg-white border border-gray-300 w-full text-sm text-[#FFA726] pl-4 pr-10 py-2.5 rounded-md outline-blue-500" placeholder="Enter name" />
                 <svg xmlns="http://www.w3.org/2000/svg" fill="#bbb" stroke="#bbb" className="w-4 h-4 absolute right-4" viewBox="0 0 24 24">
                   <circle cx="10" cy="7" r="6" data-original="#000000"></circle>
                   <path d="M14 15H6a5 5 0 0 0-5 5 3 3 0 0 0 3 3h12a3 3 0 0 0 3-3 5 5 0 0 0-5-5zm8-4h-2.59l.3-.29a1 1 0 0 0-1.42-1.42l-2 2a1 1 0 0 0 0 1.42l2 2a1 1 0 0 0 1.42 0 1 1 0 0 0 0-1.42l-.3-.29H22a1 1 0 0 0 0-2z" data-original="#000000"></path>
@@ -72,9 +72,9 @@ const Register = () => {
               </div>
             </div>
             <div>
-              <label className="text-gray-800 text-sm mb-2 block">Email Id</label>
+              <label className="text-[#FFA726] text-sm mb-2 block">Email Id</label>
               <div className="relative flex items-center">
-                <input name="email" type="email" required className="bg-white border border-gray-300 w-full text-sm text-gray-800 pl-4 pr-10 py-2.5 rounded-md outline-blue-500" placeholder="Enter email" />
+                <input name="email" type="email" required className="bg-white border border-gray-300 w-full text-sm text-[#FFA726] pl-4 pr-10 py-2.5 rounded-md outline-blue-500" placeholder="Enter email" />
                 <svg xmlns="http://www.w3.org/2000/svg" fill="#bbb" stroke="#bbb" className="w-4 h-4 absolute right-4" viewBox="0 0 682.667 682.667">
                   <defs>
                     <clipPath id="a" clipPathUnits="userSpaceOnUse">
@@ -89,9 +89,9 @@ const Register = () => {
               </div>
             </div>
             <div>
-              <label className="text-gray-800 text-sm mb-2 block">Password</label>
+              <label className="text-[#FFA726] text-sm mb-2 block">Password</label>
               <div className="relative flex items-center">
-                <input name="password" type="password" required className="bg-white border border-gray-300 w-full text-sm text-gray-800 pl-4 pr-10 py-2.5 rounded-md outline-blue-500" placeholder="Enter password" />
+                <input name="password" type="password" required className="bg-white border border-gray-300 w-full text-sm text-[#FFA726] pl-4 pr-10 py-2.5 rounded-md outline-blue-500" placeholder="Enter password" />
                 <svg xmlns="http://www.w3.org/2000/svg" fill="#bbb" stroke="#bbb" className="w-4 h-4 absolute right-4 cursor-pointer" viewBox="0 0 128 128">
                   <path d="M64 104C22.127 104 1.367 67.496.504 65.943a4 4 0 0 1 0-3.887C1.367 60.504 22.127 24 64 24s62.633 36.504 63.496 38.057a4 4 0 0 1 0 3.887C126.633 67.496 105.873 104 64 104zM8.707 63.994C13.465 71.205 32.146 96 64 96c31.955 0 50.553-24.775 55.293-31.994C114.535 56.795 95.854 32 64 32 32.045 32 13.447 56.775 8.707 63.994zM64 88c-13.234 0-24-10.766-24-24s10.766-24 24-24 24 10.766 24 24-10.766 24-24 24zm0-40c-8.822 0-16 7.178-16 16s7.178 16 16 16 16-7.178 16-16-7.178-16-16-16z" data-original="#000000"></path>
                 </svg>
@@ -99,7 +99,7 @@ const Register = () => {
             </div>
             <div className="flex items-center">
               <input id="remember-me" name="remember-me" type="checkbox" className="h-4 w-4 shrink-0 text-blue-600 focus:ring-blue-500 border-gray-300 rounded-md" />
-              <label htmlFor="remember-me" className="text-gray-800 ml-3 block text-sm">
+              <label htmlFor="remember-me" className="text-[#FFA726] ml-3 block text-sm">
                 I accept the <a href="javascript:void(0);" className="text-blue-600 font-semibold hover:underline ml-1">Terms and Conditions</a>
               </label>
             </div>
@@ -110,7 +110,7 @@ const Register = () => {
               Create Account
             </button>
           </div>
-          <p className="text-gray-800 text-sm mt-6 text-center">Already have an account? <a href="javascript:void(0);" className="text-blue-600 font-semibold hover:underline ml-1">Login here</a></p>
+          <p className="text-[#FFA726] text-sm mt-6 text-center">Already have an account? <a href="javascript:void(0);" className="text-blue-600 font-semibold hover:underline ml-1">Login here</a></p>
         </form>
       </div>
     </div>

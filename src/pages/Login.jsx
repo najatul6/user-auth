@@ -1,6 +1,6 @@
 const Login = () => {
   return (
-    <div>
+    <div className="text-[#FFA726]">
     <div className="min-h-screen flex flex-col bg-base-300 items-center justify-center">
       <div className="grid md:grid-cols-2 items-center gap-4 max-md:gap-8 max-w-6xl max-md:max-w-lg w-full p-4 m-4 shadow-[0_2px_10px_-3px_rgba(6,81,237,0.3)] rounded-md">
         <div className="md:max-w-md w-full px-4 py-4">

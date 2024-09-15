@@ -12,7 +12,7 @@ const Headers = () => {
     </>
   );
   return (
-    <div className="navbar bg-base-100">
+    <div className="navbar bg-base-200">
       <div className="navbar-start">
         <div className="dropdown">
           <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -33,12 +33,12 @@ const Headers = () => {
           </div>
           <ul
             tabIndex={0}
-            className="menu menu-sm dropdown-content bg-red-600 rounded-box z-[1] mt-3 w-52 p-4 shadow"
+            className="menu menu-sm dropdown-content bg-base-300 rounded-box z-[1] mt-3 w-52 p-4 shadow"
           >
             {links}
           </ul>
         </div>
-        <Link className="btn btn-ghost text-xl">User Auth</Link>
+        <Link to="/" className="btn btn-ghost text-xl">User Auth</Link>
       </div>
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-2">{links}</ul>

@@ -10,6 +10,7 @@ const Register = () => {
           </div>
 
           <div className="space-y-6">
+            {/* Facebook Button  */}
             <button type="button"
               className="w-full px-5 py-2.5 flex items-center justify-center rounded-md text-white text-base tracking-wider font-semibold border-none outline-none bg-blue-600 hover:bg-blue-700">
               <svg xmlns="http://www.w3.org/2000/svg" width="22px" fill="#fff" className="inline shrink-0 mr-4" viewBox="0 0 167.657 167.657">
@@ -19,6 +20,8 @@ const Register = () => {
               </svg>
               Continue with Facebook
             </button>
+
+            {/* Google Button  */}
             <button type="button"
               className="w-full px-5 py-2.5 flex items-center justify-center rounded-md text-[#FFA726] text-base tracking-wider font-semibold border-none outline-none bg-gray-100 hover:bg-gray-200">
               <svg xmlns="http://www.w3.org/2000/svg" width="22px" fill="#fff" className="inline shrink-0 mr-4" viewBox="0 0 512 512">
@@ -42,15 +45,6 @@ const Register = () => {
                   data-original="#eb4132" />
               </svg>
               Continue with Google
-            </button>
-            <button type="button"
-              className="w-full px-5 py-2.5 flex items-center justify-center rounded-md text-white text-base tracking-wider font-semibold border-none outline-none bg-black hover:bg-[#333]">
-              <svg xmlns="http://www.w3.org/2000/svg" width="22px" fill="#fff" className="inline shrink-0 mr-4" viewBox="0 0 22.773 22.773">
-                <path
-                  d="M15.769 0h.162c.13 1.606-.483 2.806-1.228 3.675-.731.863-1.732 1.7-3.351 1.573-.108-1.583.506-2.694 1.25-3.561C13.292.879 14.557.16 15.769 0zm4.901 16.716v.045c-.455 1.378-1.104 2.559-1.896 3.655-.723.995-1.609 2.334-3.191 2.334-1.367 0-2.275-.879-3.676-.903-1.482-.024-2.297.735-3.652.926h-.462c-.995-.144-1.798-.932-2.383-1.642-1.725-2.098-3.058-4.808-3.306-8.276v-1.019c.105-2.482 1.311-4.5 2.914-5.478.846-.52 2.009-.963 3.304-.765.555.086 1.122.276 1.619.464.471.181 1.06.502 1.618.485.378-.011.754-.208 1.135-.347 1.116-.403 2.21-.865 3.652-.648 1.733.262 2.963 1.032 3.723 2.22-1.466.933-2.625 2.339-2.427 4.74.176 2.181 1.444 3.457 3.028 4.209z"
-                  data-original="#000000" />
-              </svg>
-              Continue with Apple
             </button>
           </div>
         </div>
@@ -110,7 +104,7 @@ const Register = () => {
               Create Account
             </button>
           </div>
-          <p className="text-[#FFA726] text-sm mt-6 text-center">Already have an account? <a href="javascript:void(0);" className="text-blue-600 font-semibold hover:underline ml-1">Login here</a></p>
+          <p className="text-[#FFA726] text-sm mt-6 text-center">Already have an account? <a href="/login" className="text-blue-600 font-semibold hover:underline ml-1">Login here</a></p>
         </form>
       </div>
     </div>

@@ -210,7 +210,7 @@ const Register = () => {
                 >
                   I accept the{" "}
                   <a
-                    href="javascript:void(0);"
+                    href="#"
                     className="text-blue-600 font-semibold hover:underline ml-1"
                   >
                     Terms and Conditions

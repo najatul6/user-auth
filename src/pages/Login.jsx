@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const Login = () => {
   const handleSubmit=e=>{
     e.preventDefault()
@@ -16,12 +18,12 @@ const Login = () => {
                 <h3 className=" text-3xl font-extrabold">Sign in</h3>
                 <p className="text-sm mt-4 ">
                   Don&#39;t have an account{" "}
-                  <a
-                    href="/register"
+                  <Link
+                    to="/register"
                     className="text-blue-600 font-semibold hover:underline ml-1 whitespace-nowrap"
                   >
                     Register here
-                  </a>
+                  </Link>
                 </p>
               </div>
 

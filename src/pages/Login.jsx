@@ -1,10 +1,15 @@
 const Login = () => {
+  const handleSubmit=e=>{
+    e.preventDefault()
+    console.log(e.target.email.value)
+    console.log(e.target.password.value)
+  }
   return (
     <div className="text-[#FFA726]">
       <div className="min-h-screen flex flex-col bg-base-300 items-center justify-center">
         <div className="grid md:grid-cols-2 items-center gap-4 max-md:gap-8 max-w-6xl max-md:max-w-lg w-full p-4 m-4 shadow-[0_2px_10px_-3px_rgba(6,81,237,0.3)] rounded-md">
           <div className="md:max-w-md w-full px-4 py-4">
-            <form>
+            <form onSubmit={handleSubmit}>
               <div className="mb-12">
                 <h3 className=" text-3xl font-extrabold">Sign in</h3>
                 <p className="text-sm mt-4 ">
@@ -112,7 +117,7 @@ const Login = () => {
 
               <div className="mt-12">
                 <button
-                  type="button"
+                  type="submit"
                   className="w-full shadow-xl py-2.5 px-4 text-sm tracking-wide rounded-md text-white bg-blue-600 hover:bg-blue-700 focus:outline-none"
                 >
                   Sign in

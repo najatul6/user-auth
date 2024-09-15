@@ -1,7 +1,7 @@
 
 const Contact = () => {
   return (
-    <div>Contact</div>
+    <div className="min-h-screen flex flex-col justify-center items-center text-5xl">Contact</div>
   )
 }
 

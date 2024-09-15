@@ -1,7 +1,7 @@
 
 const Team = () => {
   return (
-    <div>Team</div>
+    <div className="min-h-screen flex flex-col justify-center items-center text-5xl">Team</div>
   )
 }
 

@@ -1,8 +1,10 @@
 const Login = () => {
   const handleSubmit=e=>{
     e.preventDefault()
-    console.log(e.target.email.value)
-    console.log(e.target.password.value)
+    const form=e.target
+    const email=form.email.value
+    const password=form.password.value
+    console.log(email,password);
   }
   return (
     <div className="text-[#FFA726]">

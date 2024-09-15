@@ -1,38 +1,38 @@
 import { Link, NavLink } from "react-router-dom";
 
 const Headers = () => {
-  const links = (
-    <>
-      <NavLink
-        to="/"
-        className={({ isActive, isPending }) =>
-          isPending
-            ? "pending"
-            : isActive
-            ? "text-orange-600 text-xl"
-            : "mx-4 text-xl"
-        }
-      >
-        Home
-      </NavLink>
-      <NavLink
-        to="/login"
-        className={({ isActive, isPending }) =>
-          isPending
-            ? "pending"
-            : isActive
-            ? "text-orange-600 text-xl"
-            : "mx-4 text-xl"
-        }
-      >
-        Login/Register
-      </NavLink>
-    </>
-  );
+  // const links = (
+  //   <>
+  //     <NavLink
+  //       to="/"
+  //       className={({ isActive, isPending }) =>
+  //         isPending
+  //           ? "pending"
+  //           : isActive
+  //           ? "text-orange-600 text-xl"
+  //           : "mx-4 text-xl"
+  //       }
+  //     >
+  //       Home
+  //     </NavLink>
+  //     <NavLink
+  //       to="/login"
+  //       className={({ isActive, isPending }) =>
+  //         isPending
+  //           ? "pending"
+  //           : isActive
+  //           ? "text-orange-600 text-xl"
+  //           : "mx-4 text-xl"
+  //       }
+  //     >
+  //       Login/Register
+  //     </NavLink>
+  //   </>
+  // );
   return (
     <header className="flex shadow-md py-4 px-4 sm:px-10 bg-white font-[sans-serif] min-h-[70px] tracking-wide relative z-50">
       <div className="flex flex-wrap items-center justify-between gap-5 w-full">
-        <Link href="javascript:void(0)">
+        <Link to="javascript:void(0)">
           <img
             src="https://readymadeui.com/readymadeui.svg"
             alt="logo"
@@ -66,7 +66,7 @@ const Headers = () => {
 
           <ul className="lg:flex gap-x-5 max-lg:space-y-3 max-lg:fixed max-lg:bg-white max-lg:w-1/2 max-lg:min-w-[300px] max-lg:top-0 max-lg:left-0 max-lg:p-6 max-lg:h-full max-lg:shadow-md max-lg:overflow-auto z-50">
             <li className="mb-6 hidden max-lg:block">
-              <Link href="javascript:void(0)">
+              <Link to="javascript:void(0)">
                 <img
                   src="https://readymadeui.com/readymadeui.svg"
                   alt="logo"
@@ -76,7 +76,7 @@ const Headers = () => {
             </li>
             <li className="max-lg:border-b border-gray-300 max-lg:py-3 px-3">
               <Link
-                href="javascript:void(0)"
+                to="javascript:void(0)"
                 className="hover:text-[#007bff] text-[#007bff] block font-semibold text-[15px]"
               >
                 Home
@@ -84,7 +84,7 @@ const Headers = () => {
             </li>
             <li className="max-lg:border-b border-gray-300 max-lg:py-3 px-3">
               <Link
-                href="javascript:void(0)"
+                to="javascript:void(0)"
                 className="hover:text-[#007bff] text-gray-500 block font-semibold text-[15px]"
               >
                 Team
@@ -92,7 +92,7 @@ const Headers = () => {
             </li>
             <li className="max-lg:border-b border-gray-300 max-lg:py-3 px-3">
               <Link
-                href="javascript:void(0)"
+                to="javascript:void(0)"
                 className="hover:text-[#007bff] text-gray-500 block font-semibold text-[15px]"
               >
                 Feature
@@ -100,7 +100,7 @@ const Headers = () => {
             </li>
             <li className="max-lg:border-b border-gray-300 max-lg:py-3 px-3">
               <Link
-                href="javascript:void(0)"
+                to="javascript:void(0)"
                 className="hover:text-[#007bff] text-gray-500 block font-semibold text-[15px]"
               >
                 Blog
@@ -108,7 +108,7 @@ const Headers = () => {
             </li>
             <li className="max-lg:border-b border-gray-300 max-lg:py-3 px-3">
               <Link
-                href="javascript:void(0)"
+                to="javascript:void(0)"
                 className="hover:text-[#007bff] text-gray-500 block font-semibold text-[15px]"
               >
                 About
@@ -116,7 +116,7 @@ const Headers = () => {
             </li>
             <li className="max-lg:border-b border-gray-300 max-lg:py-3 px-3">
               <Link
-                href="javascript:void(0)"
+                to="javascript:void(0)"
                 className="hover:text-[#007bff] text-gray-500 block font-semibold text-[15px]"
               >
                 Contact

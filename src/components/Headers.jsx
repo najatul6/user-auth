@@ -3,11 +3,21 @@ import { Link, NavLink } from "react-router-dom";
 const Headers = () => {
   const links = (
     <>
-      <NavLink className="mx-5">
-        <Link to="/">Home</Link>
+      <NavLink
+        to="/"
+        className={({ isActive, isPending }) =>
+          isPending ? "pending" : isActive ? "text-orange-600 text-xl" : "mx-4 text-xl"
+        }
+      >
+        Home
       </NavLink>
-      <NavLink className="mx-5">
-        <Link to="/login">Login/Register</Link>
+      <NavLink
+        to="/login"
+        className={({ isActive, isPending }) =>
+          isPending ? "pending" : isActive ? "text-orange-600 text-xl" : "mx-4 text-xl"
+        }
+      >
+        Login/Register
       </NavLink>
     </>
   );
@@ -38,7 +48,9 @@ const Headers = () => {
             {links}
           </ul>
         </div>
-        <Link to="/" className="btn btn-ghost text-xl">User Auth</Link>
+        <Link to="/" className="btn btn-ghost text-xl">
+          User Auth
+        </Link>
       </div>
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-2">{links}</ul>

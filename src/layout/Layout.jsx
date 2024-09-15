@@ -3,7 +3,7 @@ import Headers from "../components/Headers";
 
 const Layout = () => {
   return (
-    <div className=" text-white">
+    <div className="text-white">
         <Headers/>
       <Outlet />
     </div>

@@ -1,7 +1,7 @@
 
 const Register = () => {
   return (
-    <div className="font-[sans-serif] bg-gray-50 flex items-center md:h-screen p-4">
+    <div className="bg-gray-50 flex items-center md:h-screen p-4">
     <div className="w-full max-w-4xl max-md:max-w-xl mx-auto">
       <div className="bg-white grid md:grid-cols-2 gap-16 w-full sm:p-8 p-6 shadow-md rounded-md overflow-hidden">
         <div className="max-md:order-1 space-y-6">

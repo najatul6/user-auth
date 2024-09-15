@@ -4,10 +4,10 @@ import Footer from "../components/Footer";
 
 const Layout = () => {
   return (
-    <div className="text-white">
-        <Headers/>
+    <div className="text-white bg-[#213343]">
+      <Headers />
       <Outlet />
-      <Footer/>
+      <Footer />
     </div>
   );
 };

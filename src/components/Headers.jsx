@@ -1,38 +1,13 @@
 import { Link, NavLink } from "react-router-dom";
 
 const Headers = () => {
-  // const links = (
-  //   <>
-  //     <NavLink
-  //       to="/"
-  //       className={({ isActive, isPending }) =>
-  //         isPending
-  //           ? "pending"
-  //           : isActive
-  //           ? "text-orange-600 text-xl"
-  //           : "mx-4 text-xl"
-  //       }
-  //     >
-  //       Home
-  //     </NavLink>
-  //     <NavLink
-  //       to="/login"
-  //       className={({ isActive, isPending }) =>
-  //         isPending
-  //           ? "pending"
-  //           : isActive
-  //           ? "text-orange-600 text-xl"
-  //           : "mx-4 text-xl"
-  //       }
-  //     >
-  //       Login/Register
-  //     </NavLink>
-  //   </>
-  // );
+  
   return (
     <header className="flex shadow-md py-4 px-4 sm:px-10 bg-[#213343] min-h-[70px] tracking-wide relative z-50">
       <div className="flex flex-wrap items-center justify-between gap-5 w-full">
-        <Link to="/" className="text-3xl">User Auth</Link>
+        <Link to="/" className="text-3xl">
+          User Auth
+        </Link>
 
         <div
           id="collapseMenu"
@@ -71,11 +46,14 @@ const Headers = () => {
             <li className="max-lg:border-b border-gray-300 max-lg:py-3 px-3">
               <NavLink
                 to="/"
-                className={`({isActive,isPending})=>{isPending
-          ? "pending"
-           : isActive
-           ? "text-[#FFA726]"
-           : ""} hover:text-[#FFA726] text-[#007bff] block font-semibold text-[15px]`}
+                className={({ isActive, isPending }) =>
+                  isPending
+                    ? "pending"
+                    : isActive
+                    ? "text-[#FFA726] "
+                    : "hover:text-[#FFA726] block font-semibold text-[15px]"
+                }
+                
               >
                 Home
               </NavLink>
@@ -83,12 +61,13 @@ const Headers = () => {
             <li className="max-lg:border-b border-gray-300 max-lg:py-3 px-3">
               <NavLink
                 to="/team"
-                className={`({isActive,isPending})=>{isPending
-                  ? "pending"
-                   : isActive
-                   ? "text-[#FFA726]"
-                   : ""} hover:text-[#FFA726] text-[#007bff] block font-semibold text-[15px]`}
-                // className="hover:text-[#007bff] text-gray-500 block font-semibold text-[15px]"
+                className={({ isActive, isPending }) =>
+                  isPending
+                    ? "pending"
+                    : isActive
+                    ? "text-[#FFA726] "
+                    : "hover:text-[#FFA726] block font-semibold text-[15px]"
+                }
               >
                 Team
               </NavLink>
@@ -96,12 +75,13 @@ const Headers = () => {
             <li className="max-lg:border-b border-gray-300 max-lg:py-3 px-3">
               <NavLink
                 to="/features"
-                className={`({isActive,isPending})=>{isPending
-                  ? "pending"
-                   : isActive
-                   ? "text-[#FFA726]"
-                   : ""} hover:text-[#FFA726] text-[#007bff] block font-semibold text-[15px]`}
-                // className="hover:text-[#007bff] text-gray-500 block font-semibold text-[15px]"
+                className={({ isActive, isPending }) =>
+                  isPending
+                    ? "pending"
+                    : isActive
+                    ? "text-[#FFA726] "
+                    : "hover:text-[#FFA726] block font-semibold text-[15px]"
+                }
               >
                 Feature
               </NavLink>
@@ -109,12 +89,13 @@ const Headers = () => {
             <li className="max-lg:border-b border-gray-300 max-lg:py-3 px-3">
               <NavLink
                 to="/blog"
-                className={`({isActive,isPending})=>{isPending
-                  ? "pending"
-                   : isActive
-                   ? "text-[#FFA726]"
-                   : ""} hover:text-[#FFA726] text-[#007bff] block font-semibold text-[15px]`}
-                // className="hover:text-[#007bff] text-gray-500 block font-semibold text-[15px]"
+                className={({ isActive, isPending }) =>
+                  isPending
+                    ? "pending"
+                    : isActive
+                    ? "text-[#FFA726] "
+                    : "hover:text-[#FFA726] block font-semibold text-[15px]"
+                }
               >
                 Blog
               </NavLink>
@@ -122,12 +103,13 @@ const Headers = () => {
             <li className="max-lg:border-b border-gray-300 max-lg:py-3 px-3">
               <NavLink
                 to="/about"
-                className={`({isActive,isPending})=>{isPending
-                  ? "pending"
-                   : isActive
-                   ? "text-[#FFA726]"
-                   : ""} hover:text-[#FFA726] text-[#007bff] block font-semibold text-[15px]`}
-                // className="hover:text-[#007bff] text-gray-500 block font-semibold text-[15px]"
+                className={({ isActive, isPending }) =>
+                  isPending
+                    ? "pending"
+                    : isActive
+                    ? "text-[#FFA726] "
+                    : "hover:text-[#FFA726] block font-semibold text-[15px]"
+                }
               >
                 About
               </NavLink>
@@ -135,12 +117,13 @@ const Headers = () => {
             <li className="max-lg:border-b border-gray-300 max-lg:py-3 px-3">
               <NavLink
                 to="/contact"
-                className={`({isActive,isPending})=>{isPending
-                  ? "pending"
-                   : isActive
-                   ? "text-[#FFA726]"
-                   : ""} hover:text-[#FFA726] text-[#007bff] block font-semibold text-[15px]`}
-                // className="hover:text-[#007bff] text-gray-500 block font-semibold text-[15px]"
+                className={({ isActive, isPending }) =>
+                  isPending
+                    ? "pending"
+                    : isActive
+                    ? "text-[#FFA726] "
+                    : "hover:text-[#FFA726] block font-semibold text-[15px]"
+                }
               >
                 Contact
               </NavLink>

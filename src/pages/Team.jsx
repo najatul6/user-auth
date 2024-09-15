@@ -33,7 +33,7 @@ const Team = () => {
                     Chief Executive Officer
                   </p>
                   <p className="text-center text-gray-600 text-base pt-3 font-normal">
-                    The CEO's role in raising a company's corporate IQ is to
+                    The CEO&#39;s role in raising a company&#39;s corporate IQ is to
                     establish an atmosphere that promotes knowledge sharing and
                     collaboration.
                   </p>
@@ -488,7 +488,7 @@ const Team = () => {
                   </p>
                   <p className="text-center text-gray-600 text-base pt-3 font-normal">
                     A UX designer is the voice of the customer. Our job is to
-                    look beyond the business goals. We don't just experience
+                    look beyond the business goals. We don&#39;t just experience
                     user interface but also questions it.
                   </p>
                   <div className="w-full flex justify-center pt-5 pb-5">

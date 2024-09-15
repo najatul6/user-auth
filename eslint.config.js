@@ -17,9 +17,6 @@ export default [
         sourceType: "module",
       },
     },
-    compilerOptions: {
-      moduleResolution: "node",
-    },
     settings: { react: { version: "18.3" } },
     plugins: {
       react,

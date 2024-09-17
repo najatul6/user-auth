@@ -18,7 +18,7 @@ const Blog = () => {
                   Bruce Wayne
                 </p>
                 <p className="text-sm text-white font-semibold tracking-wide">
-                  13TH Oct, 2020
+                  24TH Sep, 2024
                 </p>
               </div>
               <div className="bg-white px-10 py-6 rounded-bl-3xl rounded-br-3xl">
@@ -79,7 +79,7 @@ const Blog = () => {
                       Bruce Wayne
                     </p>
                     <p className="text-sm text-white font-semibold tracking-wide">
-                      13TH Oct, 2020
+                      24TH Sep, 2024
                     </p>
                   </div>
                   <div className="bg-white px-3  lg:px-6 py-4 rounded-bl-3xl rounded-br-3xl">
@@ -103,7 +103,7 @@ const Blog = () => {
                       Bruce Wayne
                     </p>
                     <p className="text-sm text-white font-semibold tracking-wide">
-                      13TH Oct, 2020
+                      24TH Sep, 2024
                     </p>
                   </div>
                   <div className="bg-white px-3  lg:px-6 py-4 rounded-bl-3xl rounded-br-3xl">
@@ -129,7 +129,7 @@ const Blog = () => {
                       Bruce Wayne
                     </p>
                     <p className="text-sm text-white font-semibold tracking-wide">
-                      13TH Oct, 2020
+                      24TH Sep, 2024
                     </p>
                   </div>
                   <div className="bg-white px-3  lg:px-6 py-4 rounded-bl-3xl rounded-br-3xl">
@@ -153,7 +153,7 @@ const Blog = () => {
                       Bruce Wayne
                     </p>
                     <p className="text-sm text-white font-semibold tracking-wide">
-                      13TH Oct, 2020
+                      24TH Sep, 2024
                     </p>
                   </div>
                   <div className="bg-white px-3  lg:px-6 py-4 rounded-bl-3xl rounded-br-3xl">

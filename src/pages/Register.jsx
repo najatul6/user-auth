@@ -12,6 +12,12 @@ const Register = () => {
     const password = form.password.value;
     console.log(email, password, name);
   };
+
+  // Facebook Log in 
+
+  const handleFacebook=()=>{
+    console.log('hello world');
+  }
   return (
     <div className="bg-gray-50 flex items-center md:h-screen p-4">
       <div className="w-full max-w-4xl max-md:max-w-xl mx-auto">
@@ -26,6 +32,7 @@ const Register = () => {
             <div className="space-y-6">
               {/* Facebook Button  */}
               <button
+              onClick={handleFacebook}
                 type="button"
                 className="w-full px-5 py-2.5 flex items-center justify-center rounded-md text-white text-base tracking-wider font-semibold border-none outline-none bg-blue-600 hover:bg-blue-700"
               >

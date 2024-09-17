@@ -18,6 +18,11 @@ const Register = () => {
   const handleFacebook=()=>{
     console.log('hello world');
   }
+
+  // Google Login Button 
+  const handleGoogle=()=>{
+
+  }
   return (
     <div className="bg-gray-50 flex items-center md:h-screen p-4">
       <div className="w-full max-w-4xl max-md:max-w-xl mx-auto">
@@ -54,6 +59,7 @@ const Register = () => {
               {/* Google Button  */}
               <button
                 type="button"
+                onClick={handleGoogle}
                 className="w-full px-5 py-2.5 flex items-center justify-center rounded-md text-[#FFA726] text-base tracking-wider font-semibold border-none outline-none bg-gray-100 hover:bg-gray-200"
               >
                 <svg

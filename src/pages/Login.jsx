@@ -28,7 +28,7 @@ const Login = () => {
           <div className="md:max-w-md w-full px-4 py-4">
             <form onSubmit={handleSubmit}>
               <div className="mb-12">
-                <h3 className=" text-3xl font-extrabold">Sign in</h3>
+                <h3 className=" text-3xl font-extrabold">Log in</h3>
                 <p className="text-sm mt-4 ">
                   Don&#39;t have an account{" "}
                   <Link

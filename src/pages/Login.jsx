@@ -16,7 +16,9 @@ const Login = () => {
     console.log('hello world from facebook');
   }
 
-  con
+  const handleGoogle=()=>{
+    console.log('hello world from google');
+  }
   return (
     <div className="text-[#FFA726]">
       <div className="min-h-screen flex flex-col bg-base-300 items-center justify-center">

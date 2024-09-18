@@ -14,7 +14,6 @@ const Contact = () => {
                 </label>
                 <input
                   tabIndex={0}
-                  arial-label="Please input name"
                   type="name"
                   className="text-[#FFA726] leading-none  p-3 focus:oultine-none focus:border-[#FFA726] mt-4 bg-gray-100 border rounded border-gray-200 placeholder-gray-100"
                   placeholder="Please input  name"
@@ -26,7 +25,6 @@ const Contact = () => {
                 </label>
                 <input
                   tabIndex={0}
-                  arial-label="Please input email address"
                   type="name"
                   className="text-[#FFA726] leading-none  p-3 focus:oultine-none focus:border-[#FFA726] mt-4 bg-gray-100 border rounded border-gray-200 placeholder-gray-100"
                   placeholder="Please input email address"
@@ -41,7 +39,6 @@ const Contact = () => {
                 <input
                   tabIndex={0}
                   role="input"
-                  arial-label="Please input company name"
                   type="name"
                   className="text-[#FFA726] leading-none  p-3 focus:oultine-none focus:border-[#FFA726] mt-4 bg-gray-100 border rounded border-gray-200 placeholder-gray-100 "
                   placeholder="Please input company name"
@@ -53,7 +50,6 @@ const Contact = () => {
                 </label>
                 <input
                   tabIndex={0}
-                  arial-label="Please input country name"
                   type="name"
                   className="text-[#FFA726] leading-none  p-3 focus:oultine-none focus:border-[#FFA726] mt-4 bg-gray-100 border rounded border-gray-200 placeholder-gray-100"
                   placeholder="Please input country name"

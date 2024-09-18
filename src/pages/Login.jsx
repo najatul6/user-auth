@@ -11,6 +11,12 @@ const Login = () => {
     const password=form.password.value
     console.log(email,password);
   }
+
+  const handleFacebook=()=>{
+    console.log('hello world from facebook');
+  }
+
+  con
   return (
     <div className="text-[#FFA726]">
       <div className="min-h-screen flex flex-col bg-base-300 items-center justify-center">
@@ -127,7 +133,7 @@ const Login = () => {
 
               <div className="space-x-6 flex justify-center mt-6">
                 {/* Google Button  */}
-                <button type="button" className="border-none outline-none">
+                <button onClick={handleGoogle} type="button" className="border-none outline-none">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="32px"
@@ -167,7 +173,7 @@ const Login = () => {
                   </svg>
                 </button>
                 {/* Facebook Button  */}
-                <button type="button" className="border-none outline-none">
+                <button onClick={handleFacebook} type="button" className="border-none outline-none">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="32px"

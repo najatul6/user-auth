@@ -1,7 +1,5 @@
-import { useLoaderData } from "react-router-dom"
 
 const UserList = () => {
-    const user = useLoaderData([])
   return (
     <div className="py-5 flex flex-col justify-center items-center px-3">
         <h1 className="text-2xl font-bold underline capitalize text-center py-2">All Users Here</h1>

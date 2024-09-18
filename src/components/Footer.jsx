@@ -9,7 +9,7 @@ const Footer = () => {
           <ul className="space-y-5">
             <li>
               <a
-                href="javascript:void(0)"
+                href="#"
                 className="hover:text-[#FFA726] text-gray-300 text-[15px] transition-all"
               >
                 Our Story
@@ -17,7 +17,7 @@ const Footer = () => {
             </li>
             <li>
               <a
-                href="javascript:void(0)"
+                href="#"
                 className="hover:text-[#FFA726] text-gray-300 text-[15px] transition-all"
               >
                 Newsroom
@@ -25,7 +25,7 @@ const Footer = () => {
             </li>
             <li>
               <a
-                href="javascript:void(0)"
+                href="#"
                 className="hover:text-[#FFA726] text-gray-300 text-[15px] transition-all"
               >
                 Careers
@@ -33,7 +33,7 @@ const Footer = () => {
             </li>
             <li>
               <a
-                href="javascript:void(0)"
+                href="#"
                 className="hover:text-[#FFA726] text-gray-300 text-[15px] transition-all"
               >
                 Blog
@@ -49,7 +49,7 @@ const Footer = () => {
           <ul className="space-y-5">
             <li>
               <a
-                href="javascript:void(0)"
+                href="#"
                 className="hover:text-[#FFA726] text-gray-300 text-[15px] transition-all"
               >
                 Web Development
@@ -57,7 +57,7 @@ const Footer = () => {
             </li>
             <li>
               <a
-                href="javascript:void(0)"
+                href="#"
                 className="hover:text-[#FFA726] text-gray-300 text-[15px] transition-all"
               >
                 Testing Automation
@@ -65,7 +65,7 @@ const Footer = () => {
             </li>
             <li>
               <a
-                href="javascript:void(0)"
+                href="#"
                 className="hover:text-[#FFA726] text-gray-300 text-[15px] transition-all"
               >
                 AWS Development Services
@@ -73,7 +73,7 @@ const Footer = () => {
             </li>
             <li>
               <a
-                href="javascript:void(0)"
+                href="#"
                 className="hover:text-[#FFA726] text-gray-300 text-[15px] transition-all"
               >
                 Mobile App Development
@@ -89,7 +89,7 @@ const Footer = () => {
           <ul className="space-y-5">
             <li>
               <a
-                href="javascript:void(0)"
+                href="#"
                 className="hover:text-[#FFA726] text-gray-300 text-[15px] transition-all"
               >
                 Hubspot
@@ -97,7 +97,7 @@ const Footer = () => {
             </li>
             <li>
               <a
-                href="javascript:void(0)"
+                href="#"
                 className="hover:text-[#FFA726] text-gray-300 text-[15px] transition-all"
               >
                 Marketo Integration Services
@@ -105,7 +105,7 @@ const Footer = () => {
             </li>
             <li>
               <a
-                href="javascript:void(0)"
+                href="#"
                 className="hover:text-[#FFA726] text-gray-300 text-[15px] transition-all"
               >
                 Marketing Glossary
@@ -113,7 +113,7 @@ const Footer = () => {
             </li>
             <li>
               <a
-                href="javascript:void(0)"
+                href="#"
                 className="hover:text-[#FFA726] text-gray-300 text-[15px] transition-all"
               >
                 UIPath
@@ -127,7 +127,7 @@ const Footer = () => {
           <ul className="space-y-5">
             <li>
               <a
-                href="javascript:void(0)"
+                href="#"
                 className="hover:text-[#FFA726] text-gray-300 text-[15px] transition-all"
               >
                 Accessibility
@@ -135,7 +135,7 @@ const Footer = () => {
             </li>
             <li>
               <a
-                href="javascript:void(0)"
+                href="#"
                 className="hover:text-[#FFA726] text-gray-300 text-[15px] transition-all"
               >
                 About
@@ -143,7 +143,7 @@ const Footer = () => {
             </li>
             <li>
               <a
-                href="javascript:void(0)"
+                href="#"
                 className="hover:text-[#FFA726] text-gray-300 text-[15px] transition-all"
               >
                 Contact
@@ -151,7 +151,7 @@ const Footer = () => {
             </li>
             <li>
               <a
-                href="javascript:void(0)"
+                href="#"
                 className="hover:text-[#FFA726] text-gray-300 text-[15px] transition-all"
               >
                 Learn more

@@ -15,7 +15,7 @@ const Testimonial = () => {
       </div>
 
       <div className="space-x-3 mt-8">
-        <a href="javascript:void(0)"
+        <a href="#"
           className="w-7 h-7 inline-flex items-center justify-center rounded-full border-none outline-none bg-blue-600 hover:bg-blue-700 active:bg-blue-600">
           <svg xmlns="http://www.w3.org/2000/svg" width="14px" fill="#fff" viewBox="0 0 155.139 155.139">
             <path
@@ -23,7 +23,7 @@ const Testimonial = () => {
               data-original="#010002" />
           </svg>
         </a>
-        <a href="javascript:void(0)"
+        <a href="#"
           className="w-7 h-7 inline-flex items-center justify-center rounded-full border-none outline-none bg-[#03a9f4] hover:bg-[#03a1f4] active:bg-[#03a9f4]">
           <svg xmlns="http://www.w3.org/2000/svg" width="14px" fill="#fff" viewBox="0 0 512 512">
             <path
@@ -31,7 +31,7 @@ const Testimonial = () => {
               data-original="#03a9f4" />
           </svg>
         </a>
-        <a href="javascript:void(0)"
+        <a href="#"
           className="w-7 h-7 inline-flex items-center justify-center rounded-full border-none outline-none bg-[#0077b5] hover:bg-[#0055b5] active:bg-[#0077b5]">
           <svg xmlns="http://www.w3.org/2000/svg" width="14px" fill="#fff" viewBox="0 0 24 24">
             <path

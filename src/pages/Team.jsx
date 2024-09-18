@@ -38,7 +38,7 @@ const Team = () => {
                     collaboration.
                   </p>
                   <div className="w-full flex justify-center pt-5 pb-5">
-                    <a href="javascript:void(0)" className="mx-5">
+                    <a href="#" className="mx-5">
                       <div>
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
@@ -56,7 +56,7 @@ const Team = () => {
                         </svg>
                       </div>
                     </a>
-                    <a href="javascript:void(0)" className="mx-5">
+                    <a href="#" className="mx-5">
                       <div>
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
@@ -74,7 +74,7 @@ const Team = () => {
                         </svg>
                       </div>
                     </a>
-                    <a href="javascript:void(0)" className="mx-5">
+                    <a href="#" className="mx-5">
                       <div>
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
@@ -129,7 +129,7 @@ const Team = () => {
                     in product design and development.
                   </p>
                   <div className="w-full flex justify-center pt-5 pb-5">
-                    <a href="javascript:void(0)" className="mx-5">
+                    <a href="#" className="mx-5">
                       <div>
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
@@ -147,7 +147,7 @@ const Team = () => {
                         </svg>
                       </div>
                     </a>
-                    <a href="javascript:void(0)" className="mx-5">
+                    <a href="#" className="mx-5">
                       <div>
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
@@ -165,7 +165,7 @@ const Team = () => {
                         </svg>
                       </div>
                     </a>
-                    <a href="javascript:void(0)" className="mx-5">
+                    <a href="#" className="mx-5">
                       <div>
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
@@ -220,7 +220,7 @@ const Team = () => {
                     a part of the restoration.
                   </p>
                   <div className="w-full flex justify-center pt-5 pb-5">
-                    <a href="javascript:void(0)" className="mx-5">
+                    <a href="#" className="mx-5">
                       <div>
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
@@ -238,7 +238,7 @@ const Team = () => {
                         </svg>
                       </div>
                     </a>
-                    <a href="javascript:void(0)" className="mx-5">
+                    <a href="#" className="mx-5">
                       <div>
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
@@ -256,7 +256,7 @@ const Team = () => {
                         </svg>
                       </div>
                     </a>
-                    <a href="javascript:void(0)" className="mx-5">
+                    <a href="#" className="mx-5">
                       <div>
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
@@ -310,7 +310,7 @@ const Team = () => {
                     inventive. I have 20 years of experience in the field.
                   </p>
                   <div className="w-full flex justify-center pt-5 pb-5">
-                    <a href="javascript:void(0)" className="mx-5">
+                    <a href="#" className="mx-5">
                       <div>
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
@@ -328,7 +328,7 @@ const Team = () => {
                         </svg>
                       </div>
                     </a>
-                    <a href="javascript:void(0)" className="mx-5">
+                    <a href="#" className="mx-5">
                       <div>
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
@@ -346,7 +346,7 @@ const Team = () => {
                         </svg>
                       </div>
                     </a>
-                    <a href="javascript:void(0)" className="mx-5">
+                    <a href="#" className="mx-5">
                       <div>
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
@@ -401,7 +401,7 @@ const Team = () => {
                     take ideas and give them a life.
                   </p>
                   <div className="w-full flex justify-center pt-5 pb-5">
-                    <a href="javascript:void(0)" className="mx-5">
+                    <a href="#" className="mx-5">
                       <div>
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
@@ -419,7 +419,7 @@ const Team = () => {
                         </svg>
                       </div>
                     </a>
-                    <a href="javascript:void(0)" className="mx-5">
+                    <a href="#" className="mx-5">
                       <div>
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
@@ -437,7 +437,7 @@ const Team = () => {
                         </svg>
                       </div>
                     </a>
-                    <a href="javascript:void(0)" className="mx-5">
+                    <a href="#" className="mx-5">
                       <div>
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
@@ -492,7 +492,7 @@ const Team = () => {
                     user interface but also questions it.
                   </p>
                   <div className="w-full flex justify-center pt-5 pb-5">
-                    <a href="javascript:void(0)" className="mx-5">
+                    <a href="#" className="mx-5">
                       <div>
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
@@ -510,7 +510,7 @@ const Team = () => {
                         </svg>
                       </div>
                     </a>
-                    <a href="javascript:void(0)" className="mx-5">
+                    <a href="#" className="mx-5">
                       <div>
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
@@ -528,7 +528,7 @@ const Team = () => {
                         </svg>
                       </div>
                     </a>
-                    <a href="javascript:void(0)" className="mx-5">
+                    <a href="#" className="mx-5">
                       <div>
                         <svg
                           xmlns="http://www.w3.org/2000/svg"

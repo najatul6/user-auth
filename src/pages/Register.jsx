@@ -16,12 +16,12 @@ const Register = () => {
   // Facebook Log in 
 
   const handleFacebook=()=>{
-    console.log('hello world');
+    console.log('hello world from Facebook');
   }
 
   // Google Login Button 
   const handleGoogle=()=>{
-
+    console.log("hello from Google");
   }
   return (
     <div className="bg-gray-50 flex items-center md:h-screen p-4">

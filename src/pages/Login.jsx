@@ -17,6 +17,7 @@ const Login = () => {
     console.log('hello world from facebook');
   }
 
+  // Google log-in button
   const handleGoogle=()=>{
     console.log('hello world from google');
   }

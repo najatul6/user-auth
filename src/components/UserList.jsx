@@ -1,7 +1,9 @@
 
 const UserList = () => {
   return (
-    <div>UserList</div>
+    <div>
+        <h1>All Users Here</h1>
+    </div>
   )
 }
 

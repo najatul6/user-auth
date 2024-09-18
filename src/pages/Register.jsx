@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 const Register = () => {
   const [isShow, setIsShow] = useState(false);
-  const [user,setUser]=useState();
+  const [user,setUser]=useState({});
   const handleSubmit = (e) => {
     e.preventDefault();
     const form = e.target;
@@ -12,14 +12,14 @@ const Register = () => {
     const email = form.email.value;
     const password = form.password.value;
     console.log(email, password, name);
-    setUser(email, password, name);
+    setUser({email}, {password}, {name});
+    console.log(user);
   };
 
   // Facebook Log in 
 
   const handleFacebook=()=>{
     console.log('hello world from Facebook');
-    
   }
 
   // Google Login Button 

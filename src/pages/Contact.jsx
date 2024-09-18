@@ -2,7 +2,7 @@ const Contact = () => {
   return (
     <div className="min-h-screen pb-10">
       <div className="w-full">
-        <div className="w-full flex items-center justify-center my-12 relative border min-h-screen">
+        <div className="w-full flex items-center justify-center my-12 relative min-h-screen">
           <div className="absolute top-0 bg-[#253544] shadow-2xl rounded py-12 lg:px-28 px-8">
             <p className="md:text-3xl text-xl font-bold leading-7 text-center ">
               Let&#39;s chat and get a quote!

@@ -2,7 +2,7 @@
 const UserList = () => {
   return (
     <div>
-        <h1>All Users Here</h1>
+        <h1 className="text-2xl font-bold underline capitalize text-center py-2">All Users Here</h1>
     </div>
   )
 }

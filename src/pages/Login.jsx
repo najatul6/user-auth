@@ -12,6 +12,7 @@ const Login = () => {
     console.log(email,password);
   }
 
+  // Facebook log-in button 
   const handleFacebook=()=>{
     console.log('hello world from facebook');
   }

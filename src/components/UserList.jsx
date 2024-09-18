@@ -16,11 +16,7 @@ const UserList = () => {
                 </thead>
                 <tbody>
                     {/* User data will be fetched here */}
-                    {user.map(user => (
-                        <tr key={user.id}> </tr>
-                        
-
-
+                    
                 </tbody>
             </table>
         </div>

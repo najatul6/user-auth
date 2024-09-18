@@ -19,6 +19,7 @@ const Register = () => {
 
   const handleFacebook=()=>{
     console.log('hello world from Facebook');
+    
   }
 
   // Google Login Button 

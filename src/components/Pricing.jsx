@@ -2,7 +2,7 @@
 const Pricing = () => {
   return (
     <div>
-    <div className="max-w-5xl mx-auto">
+    <div className="max-w-5xl mx-auto py-16">
       <div className="text-center">
         <h2 className="text-gray-800 text-4xl font-bold mb-4">Pricing</h2>
         <p className="text-sm text-gray-500">Change your plant according your needs</p>

@@ -1,7 +1,7 @@
 
 const Upgrade = () => {
   return (
-    <div className="bg-[#182b50] px-8 py-16 font-[sans-serif]">
+    <div className="bg-[#182b50] px-8 py-16">
       <div className="max-w-6xl mx-auto grid md:grid-cols-2 justify-center items-center gap-12">
         <div className="text-center md:text-left">
           <h2 className="text-4xl lg:text-5xl font-extrabold text-white mb-6 md:!leading-[55px]">Unlock Premium Features</h2>

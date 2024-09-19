@@ -1,7 +1,7 @@
 
 const Jumbotron = () => {
   return (
-    <div className="max-w-6xl mx-auto font-[sans-serif]">
+    <div className="max-w-6xl mx-auto py-16">
     <div className="bg-gray-50 max-sm:px-8 px-12 py-8 w-full rounded">
       <h1 className="text-4xl font-extrabold text-gray-800">Tailwind CSS Jumbotron</h1>
       <div className="mt-4">

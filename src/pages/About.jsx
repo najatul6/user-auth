@@ -522,7 +522,7 @@ const About = () => {
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="bg-indigo-600 rounded-2xl p-8 xl:p-11">
             <h2 className="font-manrope text-4xl text-white text-center font-bold mb-4">
-              Subscribe to the latest offer
+              {/* Subscribe to the latest offer */}
             </h2>
             <p className="text-indigo-200 text-center mb-11 max-lg:max-w-2xl mx-auto">
               Join our community of subscribers and receive regular updates

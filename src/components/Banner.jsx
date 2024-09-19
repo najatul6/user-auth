@@ -11,7 +11,7 @@ const Banner = () => {
         <button
           type="button"
           className="mt-12 bg-transparent text-white text-base py-3 px-6 border border-white rounded-lg hover:bg-white hover:text-black transition duration-300">
-          Book Now
+          Get Started
         </button>
       </div>
     </div>

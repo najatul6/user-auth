@@ -1,6 +1,6 @@
 const Testimonial = () => {
   return (
-    <div className="grid sm:grid-cols-2 items-center gap-8 font-[sans-serif] max-w-5xl max-sm:max-w-sm mx-auto p-4">
+    <div className="grid sm:grid-cols-2 items-center gap-8 py-16 max-w-5xl max-sm:max-w-sm mx-auto p-4">
     <div className="sm:h-[400px]">
       <img src="https://readymadeui.com/team-2.webp" className="w-full h-full object-contain" />
     </div>

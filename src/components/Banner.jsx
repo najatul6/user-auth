@@ -11,10 +11,10 @@ const Banner = () => {
 
       <div className="min-h-[350px] relative z-50 h-full max-w-6xl mx-auto flex flex-col justify-center items-center text-center text-white p-6">
         <h2 className="sm:text-4xl text-2xl font-bold mb-6">
-          Explore the World And Find Your Dream Job
+          Explore the World And Find Something better 
         </h2>
 
-        <Link to="/statistics">
+        <Link to="/features">
           <button
             type="button"
             className="mt-12 bg-transparent text-white text-base py-3 px-6 border border-white rounded-lg hover:bg-white hover:text-black transition duration-300"

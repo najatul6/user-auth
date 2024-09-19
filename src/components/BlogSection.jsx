@@ -1,7 +1,7 @@
 
 const BlogSection = () => {
   return (
-    <div className="bg-white font-[sans-serif] my-4">
+    <div className="bg-white py-16">
       <div className="max-w-6xl mx-auto">
         <div className="text-center">
           <h2 className="text-3xl font-extrabold text-gray-800 inline-block relative after:absolute after:w-4/6 after:h-1 after:left-0 after:right-0 after:-bottom-4 after:mx-auto after:bg-pink-400 after:rounded-full">LATEST BLOGS</h2>

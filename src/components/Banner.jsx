@@ -6,7 +6,7 @@ const Banner = () => {
 
       <div className="min-h-[350px] relative z-50 h-full max-w-6xl mx-auto flex flex-col justify-center items-center text-center text-white p-6">
         <h2 className="sm:text-4xl text-2xl font-bold mb-6">Explore the World</h2>
-        <p className="sm:text-lg text-base text-center text-gray-200">Embark on unforgettable journeys. Book your dream vacation today!</p>
+        
 
         <button
           type="button"

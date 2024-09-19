@@ -8,7 +8,7 @@ import UserList from "../components/UserList";
 
 const Home = () => {
   return (
-    <div className="flex flex-col justify-center gap-6">
+    <div>
       <Banner />
       <UserList/>
       <Upgrade/>

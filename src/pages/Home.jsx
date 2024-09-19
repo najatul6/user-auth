@@ -2,6 +2,7 @@ import Banner from "../components/Banner";
 import BlogSection from "../components/BlogSection";
 import Partnership from "../components/Partnership";
 import Pricing from "../components/Pricing";
+import StatusTable from "../components/StatusTable";
 import Testimonial from "../components/Testimonial";
 import Upgrade from "../components/Upgrade";
 import UserList from "../components/UserList";
@@ -16,6 +17,7 @@ const Home = () => {
       <Testimonial />
       <Pricing/>
       <Partnership />
+      <StatusTable/>
     </div>
   );
 };

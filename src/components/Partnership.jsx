@@ -1,7 +1,7 @@
 
 const Partnership = () => {
   return (
-    <div className="container mx-auto pt-16">
+    <div className="container mx-auto py-16">
             <div className="w-11/12 xl:w-2/3 lg:w-2/3 md:w-2/3 mx-auto sm:mb-10 mb-16">
                 <h1 className=" xl:text-5xl md:text-3xl text-xl text-center  font-extrabold mb-5 pt-4">Partnerships with Coveted Brands</h1>
                 <p className="text-base md:text-lg lg:text-xl text-center  font-normal xl:w-10/12 xl:mx-auto">Our success has come from being committed to the property and investing in the development of the product to maximize sales. At the same time and maintaining the integrity.</p>

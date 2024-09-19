@@ -1,6 +1,6 @@
 const StatusTable = () => {
   return (
-    <div className="overflow-x-auto font-[sans-serif]">
+    <div className="overflow-x-auto py-16">
       <table className="min-w-full bg-white">
         <thead className="whitespace-nowrap">
           <tr>

@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 const Banner = () => {
   return (
-    <div className="relative font-sans before:absolute before:w-full before:h-full before:inset-0 before:bg-black before:opacity-50 before:z-10">
+    <div className="relative font-sans before:absolute before:w-full before:h-full before:inset-0 before:bg-black before:opacity-50 before:z-10 py-5">
       <img
         src="https://readymadeui.com/cardImg.webp"
         alt="Banner Image"

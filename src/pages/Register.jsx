@@ -128,7 +128,7 @@ const Register = () => {
 
           <form className="w-full" onSubmit={handleSubmit}>
             <div className="mb-8">
-              {/* <h3 className="text-[#FFA726] text-2xl font-bold">Register</h3> */}
+              <h3 className="text-[#FFA726] text-2xl font-bold">Register</h3>
             </div>
 
             <div className="space-y-6">

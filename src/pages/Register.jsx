@@ -30,7 +30,7 @@ const Register = () => {
 
   // Google Login Button 
   const handleGoogle=()=>{
-    console.log("hello from Google");
+    signInWithPopup(auth, provider)
   }
   return (
     <div className="bg-gray-50 flex items-center md:h-screen p-4">

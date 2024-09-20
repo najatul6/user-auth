@@ -9,7 +9,7 @@ const Error10 = () => {
                 <img className="md:hidden" src="https://i.ibb.co/8gTVH2Y/Group-198.png" alt="" />
             </div>
             <div className="w-full lg:w-1/2">
-                <h1 className="py-4 text-3xl lg:text-4xl font-extrabold text-gray-800">Looks like you&#39;ve found the doorway to the great nothing</h1>
+                <h1 className="py-4 text-3xl lg:text-4xl font-extrabold text-white">Looks like you&#39;ve found the doorway to the great nothing</h1>
                 <p className="py-4 text-base text-gray-800">The content you&#39;re looking for dosen&#39;t exist. Either it was removed, or you mistyped the link.</p>
                 <p className="py-2 text-base text-gray-800">Sorry about that! Please visit our home page to get where you need to go.</p>
                 <Link to="/">

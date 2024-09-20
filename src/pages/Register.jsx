@@ -6,7 +6,6 @@ import auth from "../Firebase/firebase.config";
 
 const Register = () => {
   const [isShow, setIsShow] = useState(false);
-  const [user,setUser]=useState({});
   const handleSubmit = (e) => {
     e.preventDefault();
     const form = e.target;

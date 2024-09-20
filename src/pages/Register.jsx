@@ -15,15 +15,11 @@ const Register = () => {
     const password = form.password.value;
   //  Create User 
   createUserWithEmailAndPassword(auth, email, password)
-  .then((userCredential) => {
-    // Signed up 
-    const user = userCredential.user;
-    // ...
+  .then((result) => {
+    console.log(result.user);
   })
   .catch((error) => {
-    const errorCode = error.code;
-    const errorMessage = error.message;
-    // ..
+    console.log(error.message);
   });
   };
 

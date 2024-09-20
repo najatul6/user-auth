@@ -31,6 +31,12 @@ const Register = () => {
   // Google Login Button 
   const handleGoogle=()=>{
     signInWithPopup(auth, provider)
+    .then(result=>{
+      console.log(result.user);
+    })
+    .error(err => {
+      console.log(err.message);
+    })
   }
   return (
     <div className="bg-gray-50 flex items-center md:h-screen p-4">

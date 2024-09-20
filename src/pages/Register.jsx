@@ -15,6 +15,16 @@ const Register = () => {
     const password = form.password.value;
   //  Create User 
   createUserWithEmailAndPassword(auth, email, password)
+  .then((userCredential) => {
+    // Signed up 
+    const user = userCredential.user;
+    // ...
+  })
+  .catch((error) => {
+    const errorCode = error.code;
+    const errorMessage = error.message;
+    // ..
+  });
   };
 
   // Facebook Log in 

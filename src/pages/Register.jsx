@@ -1,6 +1,8 @@
+import { createUserWithEmailAndPassword } from "firebase/auth";
 import { useState } from "react";
 import { IoEye, IoEyeOff } from "react-icons/io5";
 import { Link } from "react-router-dom";
+import auth from "../Firebase/firebase.config";
 
 const Register = () => {
   const [isShow, setIsShow] = useState(false);
@@ -11,9 +13,8 @@ const Register = () => {
     const name = form.name.value;
     const email = form.email.value;
     const password = form.password.value;
-    const person={name,email,password}
-    setUser(person);
-    console.log(user);
+  //  Create User 
+  createUserWithEmailAndPassword(auth, email, password)
   };
 
   // Facebook Log in 

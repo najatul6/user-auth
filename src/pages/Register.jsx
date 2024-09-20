@@ -26,6 +26,9 @@ const Register = () => {
 
   const handleFacebook=()=>{
     signInWithPopup(auth, provider)
+    .then(result=>{
+      console.log(result.user);
+    })
   }
 
   // Google Login Button 

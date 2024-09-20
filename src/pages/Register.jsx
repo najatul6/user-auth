@@ -1,4 +1,4 @@
-import { createUserWithEmailAndPassword } from "firebase/auth";
+import { createUserWithEmailAndPassword, signInWithPopup } from "firebase/auth";
 import { useState } from "react";
 import { IoEye, IoEyeOff } from "react-icons/io5";
 import { Link } from "react-router-dom";
@@ -25,7 +25,7 @@ const Register = () => {
   // Facebook Log in 
 
   const handleFacebook=()=>{
-    console.log('hello world from Facebook');
+    signInWithPopup(auth, provider)
   }
 
   // Google Login Button 

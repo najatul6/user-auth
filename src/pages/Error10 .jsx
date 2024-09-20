@@ -13,7 +13,7 @@ const Error10 = () => {
                 <p className="py-4 text-base text-white">The content you&#39;re looking for dosen&#39;t exist. Either it was removed, or you mistyped the link.</p>
                 <p className="py-2 text-base text-white">Sorry about that! Please visit our home page to get where you need to go.</p>
                 <Link to="/">
-                <button className="w-full lg:w-auto my-4 border rounded-md px-1 sm:px-16 py-5 bg-[#FFA726] text-white hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-700 focus:ring-opacity-50">Go back to Homepage</button>
+                <button className="w-full lg:w-auto my-4 border rounded-md px-1 sm:px-16 py-5 bg-[#FFA726] text-white hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-700 focus:ring-opacity-50">&#8592; Go back to Homepage</button>
                 </Link>
             </div>
         </div>

@@ -25,15 +25,18 @@ const Register = () => {
   // Facebook Log in 
 
   const handleFacebook=()=>{
-    signInWithPopup(auth, provider)
+    signInWithPopup(auth)
     .then(result=>{
       console.log(result.user);
+    })
+    .error(err => {
+      console.log(err.message);
     })
   }
 
   // Google Login Button 
   const handleGoogle=()=>{
-    signInWithPopup(auth, provider)
+    signInWithPopup(auth)
     .then(result=>{
       console.log(result.user);
     })

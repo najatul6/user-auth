@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 const Login = () => {
   const [showPassword,setIsShowPassword]=useState(false)
   const [user,setUser] = useState()
-  const handleSubmit=e=>{
+  const handleLogIn=e=>{
     e.preventDefault()
     const form=e.target
     const email=form.email.value
@@ -16,12 +16,12 @@ const Login = () => {
   }
 
   // Facebook log-in button 
-  const handleFacebook=()=>{
+  const handleFacebookLogIn=()=>{
     console.log('hello world from facebook');
   }
 
   // Google log-in button
-  const handleGoogle=()=>{
+  const handleGoogleLogIn=()=>{
     console.log('hello world from google');
   }
   return (
@@ -29,7 +29,7 @@ const Login = () => {
       <div className="min-h-screen flex flex-col bg-base-300 items-center justify-center">
         <div className="grid md:grid-cols-2 items-center gap-4 max-md:gap-8 max-w-6xl max-md:max-w-lg w-full p-4 m-4 shadow-[0_2px_10px_-3px_rgba(6,81,237,0.3)] rounded-md">
           <div className="md:max-w-md w-full px-4 py-4">
-            <form onSubmit={handleSubmit}>
+            <form onSubmit={handleLogIn}>
               <div className="mb-12">
                 <h3 className=" text-3xl font-extrabold">Log in</h3>
                 <p className="text-sm mt-4 ">
@@ -140,7 +140,7 @@ const Login = () => {
 
               <div className="space-x-6 flex justify-center mt-6">
                 {/* Google Button  */}
-                <button onClick={handleGoogle} type="button" className="border-none outline-none">
+                <button onClick={handleGoogleLogIn} type="button" className="border-none outline-none">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="32px"
@@ -180,7 +180,7 @@ const Login = () => {
                   </svg>
                 </button>
                 {/* Facebook Button  */}
-                <button onClick={handleFacebook} type="button" className="border-none outline-none">
+                <button onClick={handleFacebookLogIn} type="button" className="border-none outline-none">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="32px"

@@ -63,7 +63,7 @@ const StatusTable = () => {
               <div className="bg-gray-300 rounded-full w-full h-2 min-w-[50px]">
                 <div className="w-3/12 h-full rounded-full bg-purple-800"></div>
               </div>
-              <p className="text-xs text-gray-500 ml-2">25%</p>
+              <p className="text-xs text-gray-500 ml-2">35%</p>
             </td>
           </tr>
 

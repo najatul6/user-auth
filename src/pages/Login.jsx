@@ -1,6 +1,8 @@
 import { useState } from "react";
 import { IoEye, IoEyeOff } from "react-icons/io5";
 import { Link } from "react-router-dom";
+import auth from "../Firebase/firebase.config";
+import { signInWithEmailAndPassword } from "firebase/auth";
 
 const Login = () => {
   const [showPassword,setIsShowPassword]=useState(false)
@@ -10,9 +12,8 @@ const Login = () => {
     const form=e.target
     const email=form.email.value
     const password=form.password.value
-    const person={email,password}
-    setUser(person)
-    console.log(user);
+    signInWithEmailAndPassword(auth,email,password)
+    .then()
   }
 
   // Facebook log-in button 

@@ -2,7 +2,7 @@ import { useState } from "react";
 import { IoEye, IoEyeOff } from "react-icons/io5";
 import { Link } from "react-router-dom";
 import auth from "../Firebase/firebase.config";
-import { FacebookAuthProvider, signInWithEmailAndPassword, signInWithPopup } from "firebase/auth";
+import { FacebookAuthProvider, GoogleAuthProvider, signInWithEmailAndPassword, signInWithPopup } from "firebase/auth";
 import { toast, ToastContainer } from "react-toastify";
 
 const Login = () => {
@@ -41,7 +41,16 @@ const Login = () => {
 
   // Google log-in button
   const handleGoogleLogIn=()=>{
-    console.log('hello world from google');
+    const provider = new GoogleAuthProvider();
+    signInWithPopup(auth, provider)
+      .then((result) => {
+        console.log(result.user);
+        toast.success("Logged in with Google!");
+      })
+      .catch((error) => {
+        console.error(error);
+        toast.error(`Error: ${error.code}`);
+      });
   }
   return (
     <div className="text-[#FFA726]">

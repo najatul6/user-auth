@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 import auth from "../Firebase/firebase.config";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import { GoogleAuthProvider } from "firebase/auth/web-extension";
+import { FacebookAuthProvider, GoogleAuthProvider } from "firebase/auth/web-extension";
 
 const Register = () => {
   const [isShow, setIsShow] = useState(false);
@@ -30,12 +30,15 @@ const Register = () => {
   // Facebook Log in
 
   const handleFacebook = () => {
-    signInWithPopup(auth)
+    const provider= new FacebookAuthProvider();
+    signInWithPopup(auth,provider)
       .then((result) => {
         console.log(result.user);
+        toast("User Created Success!");
       })
       .error((err) => {
         console.log(err.message);
+        toast(err.message);
       });
   };
 

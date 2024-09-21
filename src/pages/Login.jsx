@@ -20,8 +20,8 @@ const Login = () => {
       toast.success("User Log in successfully");
     })
     .catch((error) => {
-      console.log(error.message);
-      toast.error(error.message);
+      console.log(error.code);
+      toast.error(error.code);
     })
   }
 

@@ -28,7 +28,7 @@ const BlogSection = () => {
           <div className="bg-white cursor-pointer rounded overflow-hidden shadow-[0_2px_10px_-3px_rgba(6,81,237,0.3)] relative top-0 hover:-top-2 transition-all duration-300">
             <img src="https://readymadeui.com/prediction.webp" alt="Blog Post 3" className="w-full h-60 object-cover" />
             <div className="p-6">
-              <span className="text-sm block text-gray-400 mb-2">5 OCT 2023 | BY SIMON KONECKI</span>
+              <span className="text-sm block text-gray-400 mb-2">5 OCT 2024 | BY SIMON KONECKI</span>
               <h3 className="text-xl font-bold text-gray-800">Trends and Predictions</h3>
               <hr className="my-4" />
               <p className="text-gray-400 text-sm">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis accumsan, nunc et tempus blandit, metus mi consectetur felis turpis vitae ligula.</p>

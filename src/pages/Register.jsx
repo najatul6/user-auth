@@ -233,22 +233,23 @@ const Register = () => {
               </div>
               <div className="flex items-center">
                 <input
-                  id="remember-me"
-                  name="remember-me"
+                  id="terms"
+                  name="terms"
                   type="checkbox"
-                  className="h-4 w-4 shrink-0 text-blue-600 focus:ring-blue-500 border-gray-300 rounded-md"
+                  required
+                  className="h-4 w-4 shrink-0 text-[#FFA726] focus:ring-[#FFA726] border-[#FFA726] rounded-md"
                 />
                 <label
-                  htmlFor="remember-me"
+                  htmlFor="terms"
                   className="text-[#FFA726] ml-3 block text-sm"
                 >
                   I accept the{" "}
-                  <a
-                    href="#"
+                  <Link
+                    to="#"
                     className="text-blue-600 font-semibold hover:underline ml-1"
                   >
                     Terms and Conditions
-                  </a>
+                  </Link>
                 </label>
               </div>
             </div>

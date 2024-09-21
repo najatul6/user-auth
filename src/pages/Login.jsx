@@ -2,7 +2,7 @@ import { useState } from "react";
 import { IoEye, IoEyeOff } from "react-icons/io5";
 import { Link } from "react-router-dom";
 import auth from "../Firebase/firebase.config";
-import { signInWithEmailAndPassword } from "firebase/auth";
+import { FacebookAuthProvider, signInWithEmailAndPassword, signInWithPopup } from "firebase/auth";
 import { toast, ToastContainer } from "react-toastify";
 
 const Login = () => {
@@ -27,7 +27,16 @@ const Login = () => {
 
   // Facebook log-in button 
   const handleFacebookLogIn=()=>{
-    console.log('hello world from facebook');
+    const provider = new FacebookAuthProvider();
+    signInWithPopup(auth, provider)
+      .then((result) => {
+        console.log(result.user);
+        toast.success("Logged in with Facebook!");
+      })
+      .catch((error) => {
+        console.error(error);
+        toast.error(`Error: ${error.code}`);
+      });
   }
 
   // Google log-in button

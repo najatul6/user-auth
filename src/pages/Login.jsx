@@ -12,8 +12,15 @@ const Login = () => {
     const form=e.target
     const email=form.email.value
     const password=form.password.value
+
+    // User Validations
     signInWithEmailAndPassword(auth,email,password)
-    .then()
+    .then(result=>{
+      console.log(result.user);
+    })
+    .catch((error) => {
+      console.log(error.message);
+    })
   }
 
   // Facebook log-in button 

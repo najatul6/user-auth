@@ -1,11 +1,10 @@
-import { createUserWithEmailAndPassword, signInWithPopup } from "firebase/auth";
+import { createUserWithEmailAndPassword, FacebookAuthProvider, GoogleAuthProvider, signInWithPopup } from "firebase/auth";
 import { useState } from "react";
 import { IoEye, IoEyeOff } from "react-icons/io5";
 import { Link } from "react-router-dom";
 import auth from "../Firebase/firebase.config";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import { FacebookAuthProvider, GoogleAuthProvider } from "firebase/auth/web-extension";
 
 const Register = () => {
   const [isShow, setIsShow] = useState(false);

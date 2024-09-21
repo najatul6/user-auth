@@ -3,8 +3,9 @@ import { useState } from "react";
 import { IoEye, IoEyeOff } from "react-icons/io5";
 import { Link } from "react-router-dom";
 import auth from "../Firebase/firebase.config";
-import { ToastContainer, toast } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+import { GoogleAuthProvider } from "firebase/auth/web-extension";
 
 const Register = () => {
   const [isShow, setIsShow] = useState(false);
@@ -14,44 +15,46 @@ const Register = () => {
     // const name = form.name.value;
     const email = form.email.value;
     const password = form.password.value;
-  //  Create User 
-  createUserWithEmailAndPassword(auth, email, password)
-  .then((result) => {
-    console.log(result.user);
-    toast("User Created Success!")
-  })
-  .catch((error) => {
-    console.log(error.message);
-    toast(error.message)
-  });
+    //  Create User
+    createUserWithEmailAndPassword(auth, email, password)
+      .then((result) => {
+        console.log(result.user);
+        toast("User Created Success!");
+      })
+      .catch((error) => {
+        console.log(error.message);
+        toast(error.message);
+      });
   };
 
-  // Facebook Log in 
+  // Facebook Log in
 
-  const handleFacebook=()=>{
+  const handleFacebook = () => {
     signInWithPopup(auth)
-    .then(result=>{
-      console.log(result.user);
-    })
-    .error(err => {
-      console.log(err.message);
-    })
-  }
+      .then((result) => {
+        console.log(result.user);
+      })
+      .error((err) => {
+        console.log(err.message);
+      });
+  };
 
-  // Google Login Button 
-  const handleGoogle=()=>{
-    signInWithPopup(auth)
-    .then(result=>{
-      console.log(result.user);
-    })
-    .error(err => {
-      console.log(err.message);
-    })
-  }
+  // Google Login Button
+  const handleGoogle = () => {
+    const provider = new GoogleAuthProvider()
+    signInWithPopup(auth, provider)
+      .then((result) => {
+        console.log(result.user);
+        toast("User Created Success!");
+      })
+      .error((err) => {
+        console.log(err.message);
+        toast(err.message);
+      });
+  };
   return (
     <div className="bg-gray-50 flex items-center md:h-screen p-4">
-      <ToastContainer position="top-center"
-autoClose={1500} />
+      <ToastContainer position="top-center" autoClose={1500} />
       <div className="w-full max-w-4xl max-md:max-w-xl mx-auto">
         <div className="bg-white grid md:grid-cols-2 gap-16 w-full sm:p-8 p-6 shadow-md rounded-md overflow-hidden">
           <div className="max-md:order-1 space-y-6">
@@ -64,7 +67,7 @@ autoClose={1500} />
             <div className="space-y-6">
               {/* Facebook Button  */}
               <button
-              onClick={handleFacebook}
+                onClick={handleFacebook}
                 type="button"
                 className="w-full px-5 py-2.5 flex items-center justify-center rounded-md text-white text-base tracking-wider font-semibold border-none outline-none bg-blue-600 hover:bg-blue-700"
               >
@@ -234,7 +237,6 @@ autoClose={1500} />
                   >
                     {isShow ? <IoEye /> : <IoEyeOff />}
                   </a>
-                  
                 </div>
               </div>
               <div className="flex items-center">

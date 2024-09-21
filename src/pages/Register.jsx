@@ -36,7 +36,7 @@ const Register = () => {
         console.log(result.user);
         toast("User Created Success!");
       })
-      .error((err) => {
+      .catch((err) => {
         console.log(err.message);
         toast(err.message);
       });
@@ -50,7 +50,7 @@ const Register = () => {
         console.log(result.user);
         toast("User Created Success!");
       })
-      .error((err) => {
+      .catch((err) => {
         console.log(err.message);
         toast(err.message);
       });

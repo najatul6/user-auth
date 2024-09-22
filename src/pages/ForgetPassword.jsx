@@ -1,6 +1,19 @@
+import { sendPasswordResetEmail } from "firebase/auth";
+import auth from "../Firebase/firebase.config";
+
 const ForgetPassword = () => {
     const handleSubmit=e=>{
-        
+        e.preventDefault();
+        const email=e.target.email.value;
+        // Reset Password
+        sendPasswordResetEmail(auth,email)
+       .then((result)=>{
+        console.log(result);
+       })
+       .catch((error) => {
+        console.log(error.message);
+       });
+
     }
   return (
     <div className="flex flex-col justify-center items-center h-[50vh]">

@@ -18,8 +18,8 @@ const Login = () => {
     signInWithEmailAndPassword(auth,email,password)
     .then(result=>{
       console.log(result.user);
-      navigate('/')
       toast.success("User Log in successfully");
+      navigate('/')
     })
     .catch((error) => {
       console.log(error.code);

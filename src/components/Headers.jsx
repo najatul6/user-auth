@@ -48,6 +48,9 @@ const Headers = () => {
               Sign up
             </button>
           </NavLink>
+          <div>
+            <img src="https://readymadeui.com/cardImg.webp" alt="" />
+          </div>
         </div>
 
         {/* Mobile Menu Button */}

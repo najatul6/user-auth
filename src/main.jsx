@@ -12,6 +12,7 @@ import Blog from "./pages/Blog";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
 import Error10 from "./pages/Error10 ";
+import ForgetPassword from "./pages/ForgetPassword";
 const router = createBrowserRouter([
   {
     path: "/",
@@ -24,6 +25,7 @@ const router = createBrowserRouter([
       { path: "/blog", element: <Blog/> },
       { path: "/about", element: <About/> },
       { path: "/contact", element: <Contact/> },
+      { path: "/resetPassword", element: <ForgetPassword/> },
     ],
   },
   { path: "/login", element:  <Login/> },

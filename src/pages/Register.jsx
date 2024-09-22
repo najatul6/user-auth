@@ -1,4 +1,4 @@
-import { createUserWithEmailAndPassword, FacebookAuthProvider, GoogleAuthProvider, signInWithPopup } from "firebase/auth";
+import { createUserWithEmailAndPassword, FacebookAuthProvider, GoogleAuthProvider, sendEmailVerification, signInWithPopup } from "firebase/auth";
 import { useState } from "react";
 import { IoEye, IoEyeOff } from "react-icons/io5";
 import { Link } from "react-router-dom";
@@ -19,6 +19,12 @@ const Register = () => {
       .then((result) => {
         console.log(result.user);
         toast("User Created Success!");
+        // send verification email
+        sendEmailVerification(auth.currentUser)
+         .then(() => {
+            console.log("Email verification sent!");
+            toast("Email verification sent!");
+          })
         e.target.reset();
       })
       .catch((error) => {

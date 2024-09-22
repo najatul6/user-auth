@@ -49,7 +49,7 @@ const Headers = () => {
             </button>
           </NavLink>
           <div>
-            <img src="https://readymadeui.com/cardImg.webp" alt="" />
+            <img src="https://readymadeui.com/cardImg.webp" alt="Profile picture" />
           </div>
         </div>
 

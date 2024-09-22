@@ -38,7 +38,7 @@ const Headers = () => {
 
         {/* Login/Sign-up Buttons */}
         <div>
-          <div className="flex space-x-3">
+          {user ?  <div className="flex space-x-3">
             <NavLink to="/login">
               <button className="px-4 py-2 text-sm rounded-full font-bold text-white border-2 border-[#FFA726] bg-[#FFA726] transition-all ease-in-out duration-300 hover:bg-transparent hover:text-[#FFA726]">
                 Login
@@ -49,14 +49,15 @@ const Headers = () => {
                 Sign up
               </button>
             </NavLink>
-          </div>
-          <div className="rounded-full border border-[#FFA726]">
+          </div>:<div className="rounded-full border border-[#FFA726]">
             <img
               src="https://readymadeui.com/cardImg.webp"
               alt="Profile picture"
               className="w-20 h-20"
             />
-          </div>
+          </div>}
+         
+          
         </div>
 
         {/* Mobile Menu Button */}

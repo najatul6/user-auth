@@ -36,7 +36,7 @@ const Headers = () => {
           ))}
         </nav>
 
-        {/* Login/Sign-up Buttons */}
+        Login/Sign-up Buttons
         <div>
           {user ?  <div className="flex space-x-3">
             <NavLink to="/login">

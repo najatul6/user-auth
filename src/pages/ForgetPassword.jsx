@@ -1,7 +1,10 @@
 import { sendPasswordResetEmail } from "firebase/auth";
 import auth from "../Firebase/firebase.config";
+import { toast, ToastContainer } from "react-toastify";
+import { useState } from "react";
 
 const ForgetPassword = () => {
+    const [getText,setText]=useState('')
   const handleSubmit = (e) => {
     e.preventDefault();
     const email = e.target.email.value;
@@ -9,13 +12,19 @@ const ForgetPassword = () => {
     sendPasswordResetEmail(auth, email)
       .then((result) => {
         console.log(result);
+        toast.success("Password Reset Email Sent!");
+        e.target.reset();
+        setText('Check your Email inbox')
+
       })
       .catch((error) => {
         console.log(error.message);
+        toast.error(error.code);
       });
   };
   return (
     <div className="flex flex-col justify-center items-center h-[50vh]">
+        <ToastContainer/>
       <form onSubmit={handleSubmit} className="flex justify-center items-center">
         <input
           type="email"
@@ -31,6 +40,7 @@ const ForgetPassword = () => {
           Submit
         </button>
       </form>
+      <p className="font-bold text-lg py-2 text-[#FFA726]">{getText}</p>
     </div>
   );
 };

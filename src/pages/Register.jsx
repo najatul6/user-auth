@@ -19,6 +19,7 @@ const Register = () => {
       .then((result) => {
         console.log(result.user);
         toast("User Created Success!");
+        e.target.reset();
       })
       .catch((error) => {
         console.log(error.message);

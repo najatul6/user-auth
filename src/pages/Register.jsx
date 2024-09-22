@@ -1,4 +1,11 @@
-import { createUserWithEmailAndPassword, FacebookAuthProvider, GoogleAuthProvider, sendEmailVerification, signInWithPopup } from "firebase/auth";
+import {
+  createUserWithEmailAndPassword,
+  FacebookAuthProvider,
+  GoogleAuthProvider,
+  sendEmailVerification,
+  signInWithPopup,
+  updateProfile,
+} from "firebase/auth";
 import { useState } from "react";
 import { IoEye, IoEyeOff } from "react-icons/io5";
 import { Link } from "react-router-dom";
@@ -11,20 +18,30 @@ const Register = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     const form = e.target;
-    // const name = form.name.value;
+    const name = form.name.value;
     const email = form.email.value;
     const password = form.password.value;
+
     //  Create User
     createUserWithEmailAndPassword(auth, email, password)
       .then((result) => {
         console.log(result.user);
         toast("User Created Success!");
-        // send verification email
-        sendEmailVerification(auth.currentUser)
-         .then(() => {
-            console.log("Email verification sent!");
-            toast("Email verification sent!");
+        // Update User Profile Name
+        updateProfile(result.user, {
+          displayName: name,
+        })
+          .then((result) => {
+            console.log(result.user);
           })
+          .catch((err) => {
+            console.log(err.message);
+          });
+        // send verification email
+        sendEmailVerification(auth.currentUser).then(() => {
+          console.log("Email verification sent!");
+          toast("Email verification sent!");
+        });
         e.target.reset();
       })
       .catch((error) => {
@@ -36,8 +53,8 @@ const Register = () => {
   // Facebook Log in
 
   const handleFacebook = () => {
-    const provider= new FacebookAuthProvider();
-    signInWithPopup(auth,provider)
+    const provider = new FacebookAuthProvider();
+    signInWithPopup(auth, provider)
       .then((result) => {
         console.log(result.user);
         toast("User Created Success!");
@@ -50,7 +67,7 @@ const Register = () => {
 
   // Google Login Button
   const handleGoogle = () => {
-    const provider = new GoogleAuthProvider()
+    const provider = new GoogleAuthProvider();
     signInWithPopup(auth, provider)
       .then((result) => {
         console.log(result.user);
@@ -138,7 +155,7 @@ const Register = () => {
                     d="M256 120V0C187.62 0 123.333 26.629 74.98 74.98a259.849 259.849 0 0 0-22.158 25.235l86.308 86.308C162.883 146.72 206.376 120 256 120z"
                     data-original="#eb4132"
                   />
-                </svg> 
+                </svg>
                 Continue with Google
               </button>
             </div>

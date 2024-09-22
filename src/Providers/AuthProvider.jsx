@@ -3,7 +3,10 @@
 const AuthProvider = () => {
     const authinfo=users
   return (
-    <div>AuthProvider</div>
+    <Authcontext.provider>
+        
+
+    </Authcontext.provider>
   )
 }
 

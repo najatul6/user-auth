@@ -48,8 +48,8 @@ const Headers = () => {
               Sign up
             </button>
           </NavLink>
-          <div>
-            <img src="https://readymadeui.com/cardImg.webp" alt="Profile picture" />
+          <div className="rounded-full">
+            <img src="https://readymadeui.com/cardImg.webp" alt="Profile picture" className="w-20 h-20" />
           </div>
         </div>
 

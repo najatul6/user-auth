@@ -48,7 +48,7 @@ const Headers = () => {
               Sign up
             </button>
           </NavLink>
-          <div className="rounded-full">
+          <div className="rounded-full border border-[#FFA726]">
             <img src="https://readymadeui.com/cardImg.webp" alt="Profile picture" className="w-20 h-20" />
           </div>
         </div>

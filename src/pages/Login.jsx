@@ -1,12 +1,13 @@
 import { useState } from "react";
 import { IoEye, IoEyeOff } from "react-icons/io5";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import auth from "../Firebase/firebase.config";
 import { FacebookAuthProvider, GoogleAuthProvider, signInWithEmailAndPassword, signInWithPopup } from "firebase/auth";
 import { toast, ToastContainer } from "react-toastify";
 
 const Login = () => {
   const [showPassword,setIsShowPassword]=useState(false)
+  const navigate= useNavigate()
   const handleLogIn=e=>{
     e.preventDefault()
     const form=e.target
@@ -17,6 +18,7 @@ const Login = () => {
     signInWithEmailAndPassword(auth,email,password)
     .then(result=>{
       console.log(result.user);
+      navigate('/')
       toast.success("User Log in successfully");
     })
     .catch((error) => {

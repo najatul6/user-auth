@@ -9,7 +9,7 @@ import { AuthContext } from "../Providers/AuthProvider";
 const Login = () => {
   const {signInUser}=useContext(AuthContext)
   const [showPassword,setIsShowPassword]=useState(false)
-  const navigate= useNavigate()
+  const navigate= useNavigate(false)
   const handleLogIn=e=>{
     e.preventDefault()
     const form=e.target

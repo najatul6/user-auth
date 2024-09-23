@@ -4,7 +4,8 @@ import { AuthContext } from "../Providers/AuthProvider";
 
 const Headers = () => {
   const [isOpen, setIsOpen] = useState(false);
-  const {user}=useContext(AuthContext)
+  const { user } = useContext(AuthContext);
+  console.log(user);
 
   const handleClick = () => {
     setIsOpen(!isOpen);
@@ -40,26 +41,28 @@ const Headers = () => {
 
         {/* Login/Sign-up Buttons */}
         <div>
-          {user ?  <div className="flex space-x-3">
-            <NavLink to="/login">
-              <button className="px-4 py-2 text-sm rounded-full font-bold text-white border-2 border-[#FFA726] bg-[#FFA726] transition-all ease-in-out duration-300 hover:bg-transparent hover:text-[#FFA726]">
-                Login
-              </button>
-            </NavLink>
-            <NavLink to="/register">
-              <button className="px-4 py-2 text-sm rounded-full font-bold text-white border-2 border-[#FFA726] bg-[#FFA726] transition-all ease-in-out duration-300 hover:bg-transparent hover:text-[#FFA726]">
-                Sign up
-              </button>
-            </NavLink>
-          </div>:<div className="rounded-full border border-[#FFA726]">
-            <img
-              src="https://readymadeui.com/cardImg.webp"
-              alt="Profile picture"
-              className="w-20 h-20"
-            />
-          </div>}
-         
-          
+          {user ? (
+            <div className="flex space-x-3">
+              <NavLink to="/login">
+                <button className="px-4 py-2 text-sm rounded-full font-bold text-white border-2 border-[#FFA726] bg-[#FFA726] transition-all ease-in-out duration-300 hover:bg-transparent hover:text-[#FFA726]">
+                  Login
+                </button>
+              </NavLink>
+              <NavLink to="/register">
+                <button className="px-4 py-2 text-sm rounded-full font-bold text-white border-2 border-[#FFA726] bg-[#FFA726] transition-all ease-in-out duration-300 hover:bg-transparent hover:text-[#FFA726]">
+                  Sign up
+                </button>
+              </NavLink>
+            </div>
+          ) : (
+            <div className="rounded-full border border-[#FFA726] overflow-hidden">
+              <img
+                src="https://readymadeui.com/cardImg.webp"
+                alt="Profile picture"
+                className="w-20 h-20 rounded-full"
+              />
+            </div>
+          )}
         </div>
 
         {/* Mobile Menu Button */}

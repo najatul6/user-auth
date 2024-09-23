@@ -51,7 +51,6 @@ const Login = () => {
         toast.success("Logged in with Google!");
       })
       .catch((error) => {
-        console.error(error);
         toast.error(`Error: ${error.code}`);
       });
   }

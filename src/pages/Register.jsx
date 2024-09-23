@@ -35,7 +35,7 @@ const Register = () => {
             console.log(user);
           })
           .catch((err) => {
-            console.log(err.message);
+            toast(err.message);
           });
         // send verification email
         userCredential.user.sendEmailVerification().then(() => {

@@ -275,7 +275,7 @@ const Register = () => {
                   htmlFor="terms"
                   className="text-[#FFA726] ml-3 block text-sm"
                 >
-                  I accept the{" "}
+                  I accept the
                   <Link
                     to="#"
                     className="text-blue-600 font-semibold hover:underline ml-1"
@@ -295,7 +295,7 @@ const Register = () => {
               </button>
             </div>
             <p className="text-[#FFA726] text-sm mt-6 text-center">
-              Already have an account?{" "}
+              Already have an account?
               <Link
                 to="/login"
                 className="text-blue-600 font-semibold hover:underline ml-1"

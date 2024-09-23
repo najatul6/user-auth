@@ -38,7 +38,6 @@ const Login = () => {
         toast.success("Logged in with Facebook!");
       })
       .catch((error) => {
-        console.error(error);
         toast.error(`Error: ${error.code}`);
       });
   }

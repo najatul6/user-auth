@@ -59,7 +59,7 @@ const Headers = () => {
               <img
                 src="https://readymadeui.com/cardImg.webp"
                 alt="Profile picture"
-                className="w-10 h-20 object-center flex justify-center items-center"
+                className="w-10 h-10 object-center flex justify-center items-center"
               />
             </div>
           )}

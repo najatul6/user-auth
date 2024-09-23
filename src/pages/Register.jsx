@@ -6,14 +6,17 @@ import {
   signInWithPopup,
   updateProfile,
 } from "firebase/auth";
-import { useState } from "react";
+import { useContext, useState } from "react";
 import { IoEye, IoEyeOff } from "react-icons/io5";
 import { Link } from "react-router-dom";
 import auth from "../Firebase/firebase.config";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import { AuthContext } from "../Providers/AuthProvider";
 
 const Register = () => {
+  const authInfo=useContext(AuthContext)
+  console.log(authInfo);
   const [isShow, setIsShow] = useState(false);
   const handleSubmit = (e) => {
     e.preventDefault();

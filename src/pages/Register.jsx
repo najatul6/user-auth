@@ -45,7 +45,6 @@ const Register = () => {
         e.target.reset();
       })
       .catch((error) => {
-        console.log(error.message);
         toast(error.message);
       });
   };

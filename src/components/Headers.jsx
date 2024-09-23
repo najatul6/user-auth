@@ -1,8 +1,10 @@
-import { useState } from "react";
+import { useContext, useState } from "react";
 import { Link, NavLink } from "react-router-dom";
+import { AuthContext } from "../Providers/AuthProvider";
 
 const Headers = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const {user}=useContext(AuthContext)
 
   const handleClick = () => {
     setIsOpen(!isOpen);
@@ -37,7 +39,7 @@ const Headers = () => {
         </nav>
 
         {/* Login/Sign-up Buttons */}
-        {/* <div>
+        <div>
           {user ?  <div className="flex space-x-3">
             <NavLink to="/login">
               <button className="px-4 py-2 text-sm rounded-full font-bold text-white border-2 border-[#FFA726] bg-[#FFA726] transition-all ease-in-out duration-300 hover:bg-transparent hover:text-[#FFA726]">
@@ -58,7 +60,7 @@ const Headers = () => {
           </div>}
          
           
-        </div> */}
+        </div>
 
         {/* Mobile Menu Button */}
         <button className="lg:hidden" onClick={handleClick}>

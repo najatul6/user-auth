@@ -1,10 +1,7 @@
 import {
-  createUserWithEmailAndPassword,
   FacebookAuthProvider,
   GoogleAuthProvider,
-  sendEmailVerification,
   signInWithPopup,
-  updateProfile,
 } from "firebase/auth";
 import { useContext, useState } from "react";
 import { IoEye, IoEyeOff } from "react-icons/io5";
@@ -52,31 +49,7 @@ const Register = () => {
         console.log(error.message);
         toast(error.message);
       });
-    createUserWithEmailAndPassword(auth, email, password)
-      .then((result) => {
-        console.log(result.user);
-        toast("User Created Success!");
-        // Update User Profile Name
-        updateProfile(result.user, {
-          displayName: name,
-        })
-          .then((result) => {
-            console.log(result.user);
-          })
-          .catch((err) => {
-            console.log(err.message);
-          });
-        // send verification email
-        sendEmailVerification(auth.currentUser).then(() => {
-          console.log("Email verification sent!");
-          toast("Email verification sent!");
-        });
-        e.target.reset();
-      })
-      .catch((error) => {
-        console.log(error.message);
-        toast(error.message);
-      });
+    
   };
 
   // Facebook Log in

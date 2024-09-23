@@ -64,7 +64,7 @@ const Register = () => {
       });
   };
 
-  // Google Login Button
+  // Google Register Button
   const handleGoogle = () => {
     const provider = new GoogleAuthProvider();
     signInWithPopup(auth, provider)
@@ -73,7 +73,6 @@ const Register = () => {
         toast("User Created Success!");
       })
       .catch((err) => {
-        console.log(err.message);
         toast(err.message);
       });
   };

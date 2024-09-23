@@ -1,11 +1,13 @@
-import { useState } from "react";
+import { useContext, useState } from "react";
 import { IoEye, IoEyeOff } from "react-icons/io5";
 import { Link, useNavigate } from "react-router-dom";
 import auth from "../Firebase/firebase.config";
 import { FacebookAuthProvider, GoogleAuthProvider, signInWithEmailAndPassword, signInWithPopup } from "firebase/auth";
 import { toast, ToastContainer } from "react-toastify";
+import { AuthContext } from "../Providers/AuthProvider";
 
 const Login = () => {
+  const {signInUser}=useContext(AuthContext)
   const [showPassword,setIsShowPassword]=useState(false)
   const navigate= useNavigate()
   const handleLogIn=e=>{
@@ -15,6 +17,16 @@ const Login = () => {
     const password=form.password.value
 
     // User Validations
+    signInUser(email, password)
+    .then(result=>{
+      console.log(result.user);
+      toast.success("User Log in successfully");
+      navigate('/')
+    })
+    .catch((error) => {
+      console.log(error.code);
+      toast.error(error.code);
+    })
     signInWithEmailAndPassword(auth,email,password)
     .then(result=>{
       console.log(result.user);

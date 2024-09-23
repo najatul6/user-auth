@@ -15,8 +15,8 @@ import "react-toastify/dist/ReactToastify.css";
 import { AuthContext } from "../Providers/AuthProvider";
 
 const Register = () => {
-  const authInfo=useContext(AuthContext)
-  console.log(authInfo);
+  const {createUser}=useContext(AuthContext)
+ 
   const [isShow, setIsShow] = useState(false);
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -26,6 +26,32 @@ const Register = () => {
     const password = form.password.value;
 
     //  Create User
+    createUser(email, password, name)
+     .then((userCredential) => {
+        console.log(userCredential.user);
+        toast("User Created Success!");
+        // Update User Profile Name
+        userCredential.user
+         .updateProfile({
+            displayName: name,
+          })
+         .then((user) => {
+            console.log(user);
+          })
+         .catch((err) => {
+            console.log(err.message);
+          });
+        // send verification email
+        userCredential.user.sendEmailVerification().then(() => {
+          console.log("Email verification sent!");
+          toast("Email verification sent!");
+        });
+        e.target.reset();
+      })
+     .catch((error) => {
+        console.log(error.message);
+        toast(error.message);
+      });
     createUserWithEmailAndPassword(auth, email, password)
       .then((result) => {
         console.log(result.user);

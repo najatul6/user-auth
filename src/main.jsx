@@ -13,27 +13,30 @@ import About from "./pages/About";
 import Contact from "./pages/Contact";
 import Error10 from "./pages/Error10 ";
 import ForgetPassword from "./pages/ForgetPassword";
+import AuthProvider from "./Providers/AuthProvider";
 const router = createBrowserRouter([
   {
     path: "/",
     element: <Layout />,
-    errorElement:<Error10/>,
+    errorElement: <Error10 />,
     children: [
-      { path: "/", element: <Home/> },
-      { path: "/team", element: <Team/> },
-      { path: "/features", element: <Features/> },
-      { path: "/blog", element: <Blog/> },
-      { path: "/about", element: <About/> },
-      { path: "/contact", element: <Contact/> },
-      { path: "/resetPassword", element: <ForgetPassword/> },
+      { path: "/", element: <Home /> },
+      { path: "/team", element: <Team /> },
+      { path: "/features", element: <Features /> },
+      { path: "/blog", element: <Blog /> },
+      { path: "/about", element: <About /> },
+      { path: "/contact", element: <Contact /> },
+      { path: "/resetPassword", element: <ForgetPassword /> },
     ],
   },
-  { path: "/login", element:  <Login/> },
-  { path: "/register", element:  <Register/> },
+  { path: "/login", element: <Login /> },
+  { path: "/register", element: <Register /> },
 ]);
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
-    <RouterProvider router={router} />
+    <AuthProvider>
+      <RouterProvider router={router} />
+    </AuthProvider>
   </StrictMode>
 );

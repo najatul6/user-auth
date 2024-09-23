@@ -12,8 +12,7 @@ import "react-toastify/dist/ReactToastify.css";
 import { AuthContext } from "../Providers/AuthProvider";
 
 const Register = () => {
-  const {createUser}=useContext(AuthContext)
- 
+  const { createUser } = useContext(AuthContext);
   const [isShow, setIsShow] = useState(false);
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -24,18 +23,18 @@ const Register = () => {
 
     //  Create User
     createUser(email, password, name)
-     .then((userCredential) => {
+      .then((userCredential) => {
         console.log(userCredential.user);
         toast("User Created Success!");
         // Update User Profile Name
         userCredential.user
-         .updateProfile({
+          .updateProfile({
             displayName: name,
           })
-         .then((user) => {
+          .then((user) => {
             console.log(user);
           })
-         .catch((err) => {
+          .catch((err) => {
             console.log(err.message);
           });
         // send verification email
@@ -45,11 +44,10 @@ const Register = () => {
         });
         e.target.reset();
       })
-     .catch((error) => {
+      .catch((error) => {
         console.log(error.message);
         toast(error.message);
       });
-    
   };
 
   // Facebook Log in

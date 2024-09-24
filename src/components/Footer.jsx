@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const Footer = () => {
   return (
     <footer className=" tracking-wide bg-[#213343] py-10 px-10">
@@ -163,7 +165,7 @@ const Footer = () => {
 
       <div className="border-t text-center border-[#6b5f5f] pt-8 mt-8">
         <p className="text-gray-300 text-[15px]">
-          &copy; Najatul Islam. All rights reserved.
+          &copy; <Link to="https://najatul-islam.vercel.app" target="_blank" className="text-[#FFA726]">Najatul Islam.</Link> | All rights reserved.
         </p>
       </div>
     </footer>

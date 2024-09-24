@@ -1,39 +1,36 @@
 import { useContext, useState } from "react";
 import { IoEye, IoEyeOff } from "react-icons/io5";
 import { Link, useNavigate } from "react-router-dom";
-import auth from "../Firebase/firebase.config";
-import { FacebookAuthProvider, GoogleAuthProvider,  signInWithPopup } from "firebase/auth";
 import { toast, ToastContainer } from "react-toastify";
-import 'react-toastify/dist/ReactToastify.css';
+import "react-toastify/dist/ReactToastify.css";
 import { AuthContext } from "../Providers/AuthProvider";
 
 const Login = () => {
-  const {signInUser}=useContext(AuthContext)
-  const [showPassword,setIsShowPassword]=useState(false)
-  const navigate= useNavigate()
-  const handleLogIn=e=>{
-    e.preventDefault()
-    const form=e.target
-    const email=form.email.value
-    const password=form.password.value
+  const { signInUser, signInWithFacebook, signInWithGoogle } =
+    useContext(AuthContext);
+  const [showPassword, setIsShowPassword] = useState(false);
+  const navigate = useNavigate();
+  const handleLogIn = (e) => {
+    e.preventDefault();
+    const form = e.target;
+    const email = form.email.value;
+    const password = form.password.value;
 
     // User Validations
     signInUser(email, password)
-    .then(result=>{
-      console.log(result.user);
-      navigate('/')
-      toast("User Log in successfully");
-    })
-    .catch((error) => {
-      toast(`Error: ${error.code.message}`);
-    })
-   
-  }
+      .then((result) => {
+        console.log(result.user);
+        navigate("/");
+        toast("User Log in successfully");
+      })
+      .catch((error) => {
+        toast(`Error: ${error.code.message}`);
+      });
+  };
 
-  // Facebook log-in button 
-  const handleFacebookLogIn=()=>{
-    const provider = new FacebookAuthProvider();
-    signInWithPopup(auth, provider)
+  // Facebook log-in button
+  const handleFacebookLogIn = () => {
+    signInWithFacebook()
       .then((result) => {
         console.log(result.user);
         toast("Logged in with Facebook!");
@@ -41,12 +38,11 @@ const Login = () => {
       .catch((error) => {
         toast(`Error: ${error.code}`);
       });
-  }
+  };
 
   // Google log-in button
-  const handleGoogleLogIn=()=>{
-    const provider = new GoogleAuthProvider();
-    signInWithPopup(auth, provider)
+  const handleGoogleLogIn = () => {
+    signInWithGoogle()
       .then((result) => {
         console.log(result.user);
         toast("Logged in with Google!");
@@ -54,7 +50,7 @@ const Login = () => {
       .catch((error) => {
         toast(`Error: ${error.code}`);
       });
-  }
+  };
   return (
     <div className="text-[#FFA726]">
       <ToastContainer position="top-center" autoClose={1500} />
@@ -172,7 +168,11 @@ const Login = () => {
 
               <div className="space-x-6 flex justify-center mt-6">
                 {/* Google Button  */}
-                <button onClick={handleGoogleLogIn} type="button" className="border-none outline-none">
+                <button
+                  onClick={handleGoogleLogIn}
+                  type="button"
+                  className="border-none outline-none"
+                >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="32px"
@@ -212,7 +212,11 @@ const Login = () => {
                   </svg>
                 </button>
                 {/* Facebook Button  */}
-                <button onClick={handleFacebookLogIn} type="button" className="border-none outline-none">
+                <button
+                  onClick={handleFacebookLogIn}
+                  type="button"
+                  className="border-none outline-none"
+                >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="32px"

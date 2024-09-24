@@ -49,7 +49,7 @@ const Headers = () => {
         <div>
           {user ? (
             <div className="dropdown dropdown-end">
-              <div tabIndex={0} role="button" className="m-1">
+              <div tabIndex={0} role="button" className="">
                 <div className="rounded-full border border-[#FFA726] overflow-hidden">
                   <img
                     src="https://readymadeui.com/cardImg.webp"

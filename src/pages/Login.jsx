@@ -24,7 +24,7 @@ const Login = () => {
       navigate('/')
     })
     .catch((error) => {
-      toast.error(`Error: ${error.code}`);
+      toast.error(`Error: ${error.code.message}`);
     })
    
   }

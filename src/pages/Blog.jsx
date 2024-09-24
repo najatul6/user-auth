@@ -1,13 +1,13 @@
 const Blog = () => {
   return (
-    <div id="blog" className="bg-gray-100 px-4 xl:px-0 py-12">
+    <div id="blog" className="bg-gray-100  xl:px-0 py-12">
       <div className="mx-auto container">
         <h1 className="text-center text-3xl lg:text-5xl tracking-wider text-gray-900">
           Latest from our Blog
         </h1>
-        <div className="mt-12 lg:mt-24">
+        <div className="mt-12 lg:mt-24 px-4 ">
           <div className="grid sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-2 xl:grid-cols-2 gap-8">
-            <div>
+            <div className="">
               <img
                 className="w-full"
                 src="https://cdn.tuk.dev/assets/components/111220/Blg-6/blog(1).png"
@@ -21,11 +21,11 @@ const Blog = () => {
                   24TH Sep, 2024
                 </p>
               </div>
-              <div className="bg-white px-10 py-6 rounded-bl-3xl rounded-br-3xl">
+              <div className="bg-white px-3  lg:px-6 py-4 rounded-bl-3xl rounded-br-3xl">
                 <h1 className="text-4xl text-gray-900 font-semibold tracking-wider">
                   Transactions
                 </h1>
-                <p className="text-gray-700 text-base lg:text-lg  lg:leading-8 tracking-wide mt-6 w-11/12">
+                <p className="text-gray-700 text-sm  lg:text-base  lg:leading-8 pr-4 tracking-wide mt-2">
                   Find the latest events updates or create events, concerts,
                   conferences, workshops, exhibitions, and cultural events in
                   all cities of the US. The aim of Eventistan is to promote
@@ -68,7 +68,7 @@ const Blog = () => {
             </div>
             <div>
               <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 gap-8">
-                <div>
+                <div className="">
                   <img
                     className="w-full"
                     src="https://cdn.tuk.dev/assets/components/111220/Blg-6/blog(2).png"
@@ -118,7 +118,7 @@ const Blog = () => {
                 </div>
               </div>
               <div className="mt-10 grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 gap-8">
-                <div>
+                <div className="">
                   <img
                     className="w-full"
                     src="https://cdn.tuk.dev/assets/components/111220/Blg-6/blog(4).png"
@@ -142,7 +142,7 @@ const Blog = () => {
                     </p>
                   </div>
                 </div>
-                <div>
+                <div className="">
                   <img
                     className="w-full"
                     src="https://cdn.tuk.dev/assets/components/111220/Blg-6/blog(5).png"

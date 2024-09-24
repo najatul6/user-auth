@@ -1,18 +1,13 @@
-import {
-  FacebookAuthProvider,
-  GoogleAuthProvider,
-  signInWithPopup,
-} from "firebase/auth";
 import { useContext, useState } from "react";
 import { IoEye, IoEyeOff } from "react-icons/io5";
 import { Link } from "react-router-dom";
-import auth from "../Firebase/firebase.config";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { AuthContext } from "../Providers/AuthProvider";
 
 const Register = () => {
-  const { createUser } = useContext(AuthContext);
+  const { createUser, signInWithFacebook, signInWithGoogle } =
+    useContext(AuthContext);
   const [isShow, setIsShow] = useState(false);
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -52,8 +47,7 @@ const Register = () => {
   // Facebook Log in
 
   const handleFacebook = () => {
-    const provider = new FacebookAuthProvider();
-    signInWithPopup(auth, provider)
+    signInWithFacebook()
       .then((result) => {
         console.log(result.user);
         toast("User Created Success!");
@@ -66,8 +60,7 @@ const Register = () => {
 
   // Google Register Button
   const handleGoogle = () => {
-    const provider = new GoogleAuthProvider();
-    signInWithPopup(auth, provider)
+    signInWithGoogle()
       .then((result) => {
         console.log(result.user);
         toast("User Created Success!");

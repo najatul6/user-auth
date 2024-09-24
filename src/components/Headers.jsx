@@ -20,7 +20,7 @@ const Headers = () => {
   const menu = ["Home", "Team", "Features", "Blog", "About", "Contact"];
 
   return (
-    <header className="flex shadow-md py-4 px-4 sm:px-10 bg-[#213343] min-h-[70px] tracking-wide relative z-50">
+    <header className="flex shadow-md py-4 px-4 sm:px-10 bg-[#213343] min-h-[70px] tracking-wide relative z-[100]">
      <ToastContainer position="top-center" autoClose={1500} />
       <div className="flex flex-wrap items-center justify-between gap-5 w-full">
         <Link to="/" className="lg:text-3xl">
@@ -61,7 +61,7 @@ const Headers = () => {
               </div>
               <ul
                 tabIndex={0}
-                className="dropdown-content menu bg-base-100 rounded-box z-[1] w-52 p-2 shadow space-y-2"
+                className="dropdown-content menu bg-base-100 rounded-box z-[100] w-52 p-2 shadow space-y-2"
               >
                 <li className="text-xl font-bold uppercase text-[#FFA726] text-center">
                   {user?.displayName}
@@ -127,7 +127,7 @@ const Headers = () => {
         {/* Mobile Menu - Conditionally Render */}
         {isOpen && (
           <div
-            className="fixed inset-0 bg-[#213343] bg-opacity-50 z-50"
+            className="fixed inset-0 bg-[#213343] bg-opacity-50 z-[100]"
             onClick={handleClick} // Close when clicking outside
           >
             <ul

@@ -57,16 +57,20 @@ const Headers = () => {
               </div>
               <ul
                 tabIndex={0}
-                className="dropdown-content menu bg-base-100 rounded-box z-[1] w-52 p-2 shadow"
+                className="dropdown-content menu bg-base-100 rounded-box z-[1] w-52 p-2 shadow space-y-2"
               >
-                <li>{user?.displayName}</li>
+                <li className="text-xl font-bold uppercase text-[#FFA726] text-center">
+                  {user?.displayName}
+                </li>
                 <li>{user?.email}</li>
-                <button
-                  onClick={handleLogOut}
-                  className="btn btn-error btn-outline"
-                >
-                  Log Out
-                </button>
+                <li>
+                  <button
+                    onClick={handleLogOut}
+                    className="btn btn-error btn-outline mt-10"
+                  >
+                    Log Out
+                  </button>
+                </li>
               </ul>
             </div>
           ) : (

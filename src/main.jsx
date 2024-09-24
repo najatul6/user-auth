@@ -14,6 +14,7 @@ import Contact from "./pages/Contact";
 import Error10 from "./pages/Error10 ";
 import ForgetPassword from "./pages/ForgetPassword";
 import AuthProvider from "./Providers/AuthProvider";
+import PrivateRoute from "./Routes/PrivateRoute";
 const router = createBrowserRouter([
   {
     path: "/",
@@ -23,9 +24,23 @@ const router = createBrowserRouter([
       { path: "/", element: <Home /> },
       { path: "/team", element: <Team /> },
       { path: "/features", element: <Features /> },
-      { path: "/blog", element: <Blog /> },
+      {
+        path: "/blog",
+        element: (
+          <PrivateRoute>
+            <Blog />
+          </PrivateRoute>
+        ),
+      },
       { path: "/about", element: <About /> },
-      { path: "/contact", element: <Contact /> },
+      {
+        path: "/contact",
+        element: (
+          <PrivateRoute>
+            <Contact />
+          </PrivateRoute>
+        ),
+      },
       { path: "/resetPassword", element: <ForgetPassword /> },
     ],
   },

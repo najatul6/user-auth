@@ -100,7 +100,7 @@ const Register = () => {
                     data-original="#010002"
                   />
                 </svg>
-                Continue with Facebook
+                Continue with Facebook 
               </button>
 
               {/* Google Button  */}

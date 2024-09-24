@@ -1,23 +1,28 @@
-import { useContext } from "react"
-import { AuthContext } from "../Providers/AuthProvider"
-import { Navigate } from "react-router-dom"
+import { useContext } from "react";
+import { AuthContext } from "../Providers/AuthProvider";
+import { Navigate } from "react-router-dom";
 import PropTypes from "prop-types";
+import { HashLoader } from "react-spinners";
 
-const PrivateRoute = ({children}) => {
-    const {user,loading}=useContext(AuthContext)
+const PrivateRoute = ({ children }) => {
+  const { user, loading } = useContext(AuthContext);
 
-    if(loading){
-        return <div>Loading...</div>
-    }
+  if (loading) {
+    return (
+      <div className="flex justify-center items-center min-h-screen">
+        <HashLoader color="#FFA726" size={150} />
+      </div>
+    );
+  }
 
-    if(user){
-        return children
-    }
-  return <Navigate to="/login"/>
-}
+  if (user) {
+    return children;
+  }
+  return <Navigate to="/login" />;
+};
 
 PrivateRoute.propTypes = {
-    children: PropTypes.node.isRequired
-}
+  children: PropTypes.node.isRequired,
+};
 
-export default PrivateRoute
+export default PrivateRoute;

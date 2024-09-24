@@ -5,6 +5,7 @@ import { AuthContext } from "../Providers/AuthProvider";
 const Headers = () => {
   const [isOpen, setIsOpen] = useState(false);
   const { user, logOut } = useContext(AuthContext);
+  console.log(user);
   const handleLogOut = () => {
     logOut();
   };

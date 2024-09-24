@@ -4,6 +4,7 @@ import { Link, useNavigate } from "react-router-dom";
 import auth from "../Firebase/firebase.config";
 import { FacebookAuthProvider, GoogleAuthProvider,  signInWithPopup } from "firebase/auth";
 import { toast, ToastContainer } from "react-toastify";
+import 'react-toastify/dist/ReactToastify.css';
 import { AuthContext } from "../Providers/AuthProvider";
 
 const Login = () => {
@@ -20,11 +21,11 @@ const Login = () => {
     signInUser(email, password)
     .then(result=>{
       console.log(result.user);
-      toast.success("User Log in successfully");
       navigate('/')
+      toast("User Log in successfully");
     })
     .catch((error) => {
-      toast.error(`Error: ${error.code.message}`);
+      toast(`Error: ${error.code.message}`);
     })
    
   }
@@ -35,10 +36,10 @@ const Login = () => {
     signInWithPopup(auth, provider)
       .then((result) => {
         console.log(result.user);
-        toast.success("Logged in with Facebook!");
+        toast("Logged in with Facebook!");
       })
       .catch((error) => {
-        toast.error(`Error: ${error.code}`);
+        toast(`Error: ${error.code}`);
       });
   }
 
@@ -48,10 +49,10 @@ const Login = () => {
     signInWithPopup(auth, provider)
       .then((result) => {
         console.log(result.user);
-        toast.success("Logged in with Google!");
+        toast("Logged in with Google!");
       })
       .catch((error) => {
-        toast.error(`Error: ${error.code}`);
+        toast(`Error: ${error.code}`);
       });
   }
   return (

@@ -1,15 +1,15 @@
 import { useContext, useState } from "react";
 import { Link, NavLink } from "react-router-dom";
 import { AuthContext } from "../Providers/AuthProvider";
-import { toast } from "react-toastify";
+import { toast, ToastContainer } from "react-toastify";
+import 'react-toastify/dist/ReactToastify.css';
 
 const Headers = () => {
   const [isOpen, setIsOpen] = useState(false);
   const { user, logOut } = useContext(AuthContext);
-  console.log(user);
   const handleLogOut = () => {
     logOut().then(() => {
-      toast.success("Log Out Success!");
+      toast("Log Out Success!");
     });
   };
 
@@ -21,6 +21,7 @@ const Headers = () => {
 
   return (
     <header className="flex shadow-md py-4 px-4 sm:px-10 bg-[#213343] min-h-[70px] tracking-wide relative z-50">
+     <ToastContainer position="top-center" autoClose={1500} />
       <div className="flex flex-wrap items-center justify-between gap-5 w-full">
         <Link to="/" className="lg:text-3xl">
           User Auth

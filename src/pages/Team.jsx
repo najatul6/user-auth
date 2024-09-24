@@ -20,7 +20,7 @@ const Team = () => {
                   <div className="h-32 w-32">
                     <img
                       src="https://cdn.tuk.dev/assets/photo-1564061170517-d3907caa96ea.jfif"
-                      alt
+                      alt="Team 1"
                       className="rounded-full object-cover h-full w-full shadow-md"
                     />
                   </div>
@@ -111,7 +111,7 @@ const Team = () => {
                   <div className="h-32 w-32">
                     <img
                       src="https://cdn.tuk.dev/assets/photo-1530577197743-7adf14294584.jfif"
-                      alt
+                      alt="team 2"
                       className="rounded-full object-cover h-full w-full shadow-md"
                     />
                   </div>
@@ -202,7 +202,7 @@ const Team = () => {
                   <div className="h-32 w-32">
                     <img
                       src="https://cdn.tuk.dev/assets/photo-1566753323558-f4e0952af115.jfif"
-                      alt
+                      alt="team 3"
                       className="rounded-full object-cover h-full w-full shadow-md"
                     />
                   </div>
@@ -293,7 +293,7 @@ const Team = () => {
                   <div className="h-32 w-32">
                     <img
                       src="https://cdn.tuk.dev/assets/boy-smiling_23-2148155640.jpg"
-                      alt
+                      alt="team 4"
                       className="rounded-full object-cover h-full w-full shadow-md"
                     />
                   </div>
@@ -383,7 +383,7 @@ const Team = () => {
                   <div className="h-32 w-32">
                     <img
                       src="https://cdn.tuk.dev/assets/blond-man-happy-expression_1194-2873.jpg"
-                      alt
+                      alt="team 5"
                       className="rounded-full object-cover h-full w-full shadow-md"
                     />
                   </div>
@@ -474,7 +474,7 @@ const Team = () => {
                   <div className="h-32 w-32">
                     <img
                       src="https://cdn.tuk.dev/assets/photo-1570211776045-af3a51026f4a.jfif"
-                      alt
+                      alt="team 6"
                       className="rounded-full object-cover h-full w-full shadow-md"
                     />
                   </div>

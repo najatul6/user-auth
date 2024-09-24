@@ -1,13 +1,16 @@
 import { useContext, useState } from "react";
 import { Link, NavLink } from "react-router-dom";
 import { AuthContext } from "../Providers/AuthProvider";
+import { toast } from "react-toastify";
 
 const Headers = () => {
   const [isOpen, setIsOpen] = useState(false);
   const { user, logOut } = useContext(AuthContext);
   console.log(user);
   const handleLogOut = () => {
-    logOut();
+    logOut().then(() => {
+      toast.success("Log Out Success!");
+    });
   };
 
   const handleClick = () => {

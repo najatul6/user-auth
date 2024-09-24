@@ -55,12 +55,24 @@ const Headers = () => {
               </NavLink>
             </div>
           ) : (
-            <div className="rounded-full border border-[#FFA726] overflow-hidden">
-              <img
-                src="https://readymadeui.com/cardImg.webp"
-                alt="Profile picture"
-                className="w-10 h-10 object-center flex justify-center items-center"
-              />
+            <div className="dropdown dropdown-end">
+              <div tabIndex={0} role="button" className="btn m-1">
+                <div className="rounded-full border border-[#FFA726] overflow-hidden">
+                  <img
+                    src="https://readymadeui.com/cardImg.webp"
+                    alt="Profile picture"
+                    className="w-10 h-10 object-center flex justify-center items-center"
+                  />
+                </div>
+              </div>
+              <ul
+                tabIndex={0}
+                className="dropdown-content menu bg-base-100 rounded-box z-[1] w-52 p-2 shadow"
+              >
+                <li>{user?.displayName}</li>
+                <li>{user?.email}</li>
+                <button className="btn btn-error btn-outline">Log Out</button>
+              </ul>
             </div>
           )}
         </div>

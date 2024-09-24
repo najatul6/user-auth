@@ -6,6 +6,7 @@ import {
   GoogleAuthProvider,
   onAuthStateChanged,
   signInWithEmailAndPassword,
+  signInWithPopup,
   signOut,
 } from "firebase/auth";
 import auth from "../Firebase/firebase.config";
@@ -28,6 +29,16 @@ const AuthProvider = ({ children }) => {
     return signInWithEmailAndPassword(auth, email, password);
   };
 
+  const signInWithGoogle = () => {
+    setLoading(true)
+    return signInWithPopup(auth, googleProvider);
+  };
+
+  const signInWithFacebook = () => {
+    setLoading(true)
+    return signInWithPopup(auth, facebookProvider);
+  };
+
   const logOut = () => {
     setLoading(true)
     return signOut(auth);
@@ -43,7 +54,7 @@ const AuthProvider = ({ children }) => {
     };
   }, []);
 
-  const authInfo = { user,loading, createUser, signInUser, logOut };
+  const authInfo = { user,loading, createUser, signInUser,signInWithGoogle,signInWithFacebook, logOut };
   return (
     <AuthContext.Provider value={authInfo}>{children}</AuthContext.Provider>
   );

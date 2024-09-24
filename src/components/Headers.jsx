@@ -4,8 +4,10 @@ import { AuthContext } from "../Providers/AuthProvider";
 
 const Headers = () => {
   const [isOpen, setIsOpen] = useState(false);
-  const { user } = useContext(AuthContext);
-  console.log(user);
+  const { user, logOut } = useContext(AuthContext);
+  const handleLogOut = () => {
+    logOut();
+  };
 
   const handleClick = () => {
     setIsOpen(!isOpen);
@@ -56,7 +58,7 @@ const Headers = () => {
             </div>
           ) : (
             <div className="dropdown dropdown-end">
-              <div tabIndex={0} role="button" className="btn m-1">
+              <div tabIndex={0} role="button" className="m-1">
                 <div className="rounded-full border border-[#FFA726] overflow-hidden">
                   <img
                     src="https://readymadeui.com/cardImg.webp"
@@ -71,7 +73,12 @@ const Headers = () => {
               >
                 <li>{user?.displayName}</li>
                 <li>{user?.email}</li>
-                <button className="btn btn-error btn-outline">Log Out</button>
+                <button
+                  onClick={handleLogOut}
+                  className="btn btn-error btn-outline"
+                >
+                  Log Out
+                </button>
               </ul>
             </div>
           )}
